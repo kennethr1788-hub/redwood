@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#173D32" />
+    <title>%LABEL_UMBRELLA% %LABEL_STUDIO%</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <a class="brand" href="/" aria-label="%LABEL_UMBRELLA% %LABEL_STUDIO% home">
+          <span class="brand-name">%LABEL_UMBRELLA%<small>%LABEL_STUDIO%</small></span>
+        </a>
+        <button class="button primary new-project" id="new-project" type="button">
+          New project
+        </button>
+        <p class="section-label">Path</p>
+        <nav class="steps" id="step-rail" aria-label="Demo path">
+          <button type="button" data-step="story">
+            <small>01</small>Story
+          </button>
+          <button type="button" data-step="trim">
+            <small>02</small>Timeline
+          </button>
+          <button type="button" data-step="focus">
+            <small>03</small>Focus
+          </button>
+          <button type="button" data-step="cursor">
+            <small>04</small>Cursor
+          </button>
+          <button type="button" data-step="captions">
+            <small>05</small>Captions
+          </button>
+          <button type="button" data-step="frame">
+            <small>06</small>Frame
+          </button>
+          <button type="button" data-step="exports">
+            <small>07</small>Export
+          </button>
+        </nav>
+        <p class="section-label">
+          Projects <span id="project-count">0</span>
+        </p>
+        <nav id="project-list" class="project-list" aria-label="Saved projects">
+          <p class="muted small">Loading projects…</p>
+        </nav>
+        <div class="sidebar-footer">
+          <span class="local-dot"></span>
+          <div>
+            On this computer
+            <small>Original media stays untouched</small>
+          </div>
+        </div>
+      </aside>
+      <div class="workspace">
+        <header class="topbar">
+          <div class="breadcrumb">
+            <strong id="project-name">No project open</strong>
+            <span id="saved-state" class="save-status"></span>
+          </div>
+          <div class="transport">
+            <button id="play" class="play-button" type="button" aria-label="Play preview">
+              <span aria-hidden="true">▶</span>
+            </button>
+            <span class="time-readout">
+              <span id="play-time">00:00.0</span>
+              <small>/ <span id="play-duration">00:00.0</span></small>
+            </span>
+            <button id="mute" class="icon-button" type="button" aria-label="Mute preview">
+              ♫
+            </button>
+          </div>
+          <div class="segmented compact" aria-label="Preview aspect">
+            <button id="landscape-preview" class="active" type="button" aria-pressed="true">
+              16:9
+            </button>
+            <button id="vertical-preview" type="button" aria-pressed="false">
+              9:16
+            </button>
+          </div>
+          <div class="segmented compact" id="finish-switch" aria-label="Preview finish">
+            <button id="finish-raw" type="button" aria-pressed="false">Raw</button>
+            <button id="finish-split" type="button" aria-pressed="false">Split</button>
+            <button id="finish-draft" class="active" type="button" aria-pressed="true">
+              Draft
+            </button>
+          </div>
+          <div class="header-actions">
+            <button class="button quiet" id="save" type="button" disabled>Save</button>
+            <button class="button dark" id="render" type="button" disabled>Render</button>
+          </div>
+        </header>
+        <div class="view-switch" aria-label="Workspace view">
+          <button id="editor-tab" class="active" type="button" aria-pressed="true">
+            Editor
+          </button>
+          <button id="exports-tab" type="button" aria-pressed="false">
+            Exports <span id="export-count">0</span>
+          </button>
+        </div>
+        <main>
+          <div id="notification" class="notification hidden" role="status">
+            <span id="notification-text"></span>
+            <button id="dismiss-notification" type="button" aria-label="Dismiss notification">
+              ×
+            </button>
+          </div>
+          <section id="empty-state" class="empty-state">
+            <div class="intake-copy">
+              <span class="eyebrow">Recording in. Demo out.</span>
+              <h1>Raw recording. <em>Finished demo.</em></h1>
+              <p>
+                Bring a product recording or a public web flow. Set the timeline,
+                focus, cursor, and captions, then render a landscape film, a
+                vertical film, a still, and a local share page.
+              </p>
+              <div class="empty-actions">
+                <button id="empty-import" class="button dark" type="button">
+                  Import recording
+                </button>
+                <button id="empty-capture" class="button" type="button">
+                  Capture a URL
+                </button>
+              </div>
+              <p class="small muted">
+                Landscape 1280×720 · vertical 720×1280 · still · GIF · share page
+              </p>
+            </div>
+            <div class="intake-hero" aria-hidden="true">
+              <figure class="compare-sample">
+                <div class="sample raw-sample">
+                  <span>Raw</span>
+                  <div class="sample-screen">
+                    <i></i><i></i><i></i>
+                  </div>
+                </div>
+                <div class="sample draft-sample">
+                  <span>Draft</span>
+                  <div class="sample-stage">
+                    <strong>The offer, in focus</strong>
+                    <div class="sample-screen framed"><b></b></div>
+                  </div>
+                </div>
+              </figure>
+              <p>A picture of the path. Your recording appears here after import.</p>
+            </div>
+          </section>
+          <div id="editor" class="editor hidden">
+            <section class="canvas-column">
+              <div class="canvas-toolbar">
+                <div class="canvas-label">
+                  <span class="local-dot"></span>
+                  <span id="finish-label">Editor draft</span>
+                </div>
+                <p id="source-facts" class="source-facts"></p>
+              </div>
+              <div class="preview-well">
+                <div id="stage" class="stage finish-draft">
+                  <div class="raw-pane" id="raw-pane">
+                    <span class="pane-tag">Raw</span>
+                    <video
+                      id="compare-video"
+                      muted
+                      playsinline
+                      preload="metadata"
+                      aria-label="Raw recording"
+                    ></video>
+                  </div>
+                  <div id="composition" class="composition aurora">
+                    <span class="pane-tag draft-tag">Draft</span>
+                    <div class="composition-heading polish">
+                      <span class="composition-kicker">Product walkthrough</span>
+                      <h2 id="preview-title"></h2>
+                      <p id="preview-subtitle"></p>
+                    </div>
+                    <div class="video-frame polish-frame">
+                      <div class="window-chrome polish">
+                        <span></span><span></span><span></span>
+                        <div id="preview-domain">Your product</div>
+                      </div>
+                      <div class="video-viewport" id="video-viewport">
+                        <div class="picture" id="picture">
+                          <video
+                            id="source-video"
+                            playsinline
+                            preload="metadata"
+                          ></video>
+                          <span
+                            id="preview-cursor"
+                            class="preview-cursor hidden"
+                            aria-hidden="true"
+                          ></span>
+                        </div>
+                        <span id="focus-reticle" class="focus-reticle" hidden></span>
+                      </div>
+                    </div>
+                    <div id="preview-caption" class="preview-caption polish hidden"></div>
+                    <div class="composition-footer polish">
+                      <span>%LABEL_UMBRELLA% %LABEL_STUDIO%</span>
+                      <span>Editor draft</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p id="preview-truth" class="preview-note">
+                Editor draft. Zoom, frame, and cursor here are approximate.
+                Render writes the finished films.
+              </p>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <strong>Timeline</strong>
+                  <span id="timeline-info" class="muted small">
+                    One recording. Trim keeps a range. Words sit on the same clock.
+                  </span>
+                </div>
+                <div class="lanes" id="timeline-lanes">
+                  <div id="timeline-ruler" class="timeline-ruler"></div>
+                  <div class="timeline-track">
+                    <span class="track-icon">Picture</span>
+                    <div class="clip" id="timeline-clip">
+                      <div id="trim-window" class="trim-window">
+                        <div id="clip-progress"></div>
+                        <div id="playhead" class="playhead"></div>
+                        <input
+                          id="seek"
+                          type="range"
+                          min="0"
+                          max="1000"
+                          value="0"
+                          aria-label="Preview playhead"
+                        />
+                      </div>
+                      <span id="clip-name">Original recording</span>
+                      <span id="clip-duration"></span>
+                    </div>
+                  </div>
+                  <div class="timeline-track caption-track">
+                    <span class="track-icon">Words</span>
+                    <div id="caption-track" class="caption-lane">
+                      <div id="caption-blocks"></div>
+                      <div id="caption-track-label">Add captions to tell the story</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <aside class="inspector" aria-label="Composition settings">
+              <div class="inspector-heading">
+                <p class="eyebrow">Treatment</p>
+                <h2>Shape the demo</h2>
+              </div>
+              <details id="story-section" open>
+                <summary>Story <span>01</span></summary>
+                <div class="control-body">
+                  <label>
+                    Title
+                    <input id="title" maxlength="100" placeholder="A better way to work" />
+                  </label>
+                  <label>
+                    Subtitle
+                    <input
+                      id="subtitle"
+                      maxlength="160"
+                      placeholder="A short story about your product"
+                    />
+                  </label>
+                  <p class="field-note">
+                    Title and subtitle are burned into the rendered frame. This
+                    draft shows them above the picture.
+                  </p>
+                </div>
+              </details>
+              <details id="trim-section" open>
+                <summary>Timeline <span>02</span></summary>
+                <div class="control-body">
+                  <div class="two-columns">
+                    <label>
+                      Start (seconds)
+                      <input id="trim-start" type="number" min="0" step="0.1" />
+                    </label>
+                    <label>
+                      End (seconds)
+                      <input id="trim-end" type="number" min="0.1" step="0.1" />
+                    </label>
+                  </div>
+                  <p class="field-note">
+                    Trim keeps at least half a second. Times use the original
+                    recording. The source file is not cut.
+                  </p>
+                </div>
+              </details>
+              <details id="cuts-section" open>
+                <summary>Reversible cuts <span>SOURCE TIME</span></summary>
+                <div class="control-body">
+                  <p class="field-note">Remove or restore any interval of the original. Review the source before applying. Recovery creates a new revision; all exports then need rendering again.</p>
+                  <p id="retained-ranges" class="field-note"></p>
+                  <div class="two-columns"><label>Cut start (s)<input id="cut-start" type="number" min="0" step="0.001" value="1"></label><label>Cut end (s)<input id="cut-end" type="number" min="0" step="0.001" value="2"></label></div>
+                  <button id="audition-cut" type="button">Audition original interval</button>
+                  <label><input id="cut-reviewed" type="checkbox"> I reviewed this source interval</label>
+                  <button id="remove-cut" type="button">Remove interval</button><button id="restore-cut" type="button">Restore interval</button>
+                </div>
+              </details>
+              <details id="focus-blocks-section" open><summary>Focus blocks <span>SOURCE TIME</span></summary><div class="control-body">
+                <p class="field-note">Add separate focus moves. Saved blocks use original source time; removed intervals never play. Review landscape and portrait with final-frame inspection. Fit framing disables camera zoom.</p>
+                <div id="focus-block-list"></div><button id="add-focus-block" type="button">Add focus block</button><button id="propose-focus" type="button">Review captured click proposals</button><div id="focus-proposals"></div>
+              </div></details>
+              <details id="transcript-cuts-section" open><summary>Transcript cuts <span>REVIEW</span></summary><div class="control-body">
+                <p class="field-note">Caption text edits never delete media. Only original aligned ASR words can propose a source cut. Audition the words before accepting.</p>
+                <button id="load-transcript-words" type="button">Load aligned words</button><p id="word-status" class="field-note"></p><p id="aligned-words" class="field-note"></p>
+                <div class="two-columns"><label>First word<select id="word-first"></select></label><label>Last word<select id="word-last"></select></label></div>
+                <button id="propose-transcript-cut" type="button">Propose selected word cut</button><p id="transcript-proposal" class="field-note"></p>
+                <button id="audition-transcript" type="button">Audition proposed words</button><label><input id="transcript-reviewed" type="checkbox"> I reviewed this word cut</label><button id="accept-transcript" type="button">Accept word cut</button><button id="reject-transcript" type="button">Reject word cut</button>
+              </div></details>
+              <details id="silence-section" open><summary>Silence review <span>KEEP BY DEFAULT</span></summary><div class="control-body"><p class="field-note">Local amplitude detection is evidence to audition, not proof of unwanted speech. Caption gaps are separate and cannot delete media. Shorten retains a 300 ms pause plus protected 100 ms interior edges.</p><button id="detect-silence" type="button">Detect silence locally</button><p id="silence-status" class="field-note"></p><div id="silence-proposals"></div></div></details>
+              <details id="inspection-section" open>
+                <summary>Final-frame inspection <span>NEW</span></summary>
+                <div class="control-body">
+                  <p class="field-note">Uses the exact final compositor. First inspection renders a bounded local cache; subsequent timestamps reuse it. An inspected frame is not a reviewed final video.</p>
+                  <label>Landscape framing<select id="landscape-fit"><option value="cover">Cover · focus crop</option><option value="fit">Fit · whole recording</option></select></label>
+                  <label>Portrait framing<select id="vertical-fit"><option value="cover">Cover · focus crop</option><option value="fit">Fit · whole recording</option></select></label>
+                  <p class="field-note">Fit uses centered letterboxing and disables focus zoom for that ratio.</p>
+                  <label>Inspect ratio<select id="inspect-ratio"><option value="landscape">Landscape · 16:9</option><option value="vertical">Portrait · 9:16</option></select></label>
+                  <label>Output time (seconds)<input id="inspect-time" type="number" min="0" step="0.1" value="0" /></label>
+                  <button id="inspect-frame" class="button small-button" type="button">Inspect final frame</button>
+                  <label class="checkbox-label"><input type="checkbox" id="safe-guides" />Show 10% inset review guides</label>
+                  <p class="field-note">Generic geometry guides only; not current platform safe-zone approval. Guides never export.</p>
+                  <div id="inspection-image-wrap" class="inspection-image-wrap hidden"><img id="inspection-image" alt="Frame extracted from final composition"/><div class="safe-guides"></div></div>
+                  <p id="inspection-status" class="field-note">No inspected frame.</p>
+                  <button id="review-cover" class="button small-button" type="button">Review this time as cover</button>
+                  <a id="cover-download" class="hidden" download="reviewed-cover.png">Download reviewed cover</a>
+                  <button id="recover-presentation" class="button small-button" type="button">Recover previous saved presentation</button>
+                  <p class="field-note">One saved checkpoint; recover again to redo. Original media is never edited.</p>
+                </div>
+              </details>
+              <details id="focus-section" open>
+                <summary>Focus <span>03</span></summary>
+                <div class="control-body">
+                  <div class="range-label">
+                    <label for="zoom">Focus zoom</label>
+                    <output id="zoom-value">1.00×</output>
+                  </div>
+                  <input id="zoom" type="range" min="1" max="2" step="0.01" value="1" />
+                  <div class="two-columns">
+                    <label>
+                      Focus X
+                      <input id="focus-x" type="number" min="0" max="100" step="1" value="50" />
+                    </label>
+                    <label>
+                      Focus Y
+                      <input id="focus-y" type="number" min="0" max="100" step="1" value="50" />
+                    </label>
+                  </div>
+                  <p class="field-note">
+                    Focus is one point, as a percentage of the source frame. The
+                    draft jumps to this zoom. The render eases in and holds.
+                  </p>
+                </div>
+              </details>
+              <details id="cursor-section">
+                <summary>Cursor <span>04</span></summary>
+                <div class="control-body">
+                  <label class="checkbox-label">
+                    <input id="cursor" type="checkbox" checked />
+                    Show captured cursor
+                  </label>
+                  <p id="cursor-note" class="field-note"></p>
+                  <p class="field-note">
+                    A cursor burned into the pixels cannot be removed. Smoothing
+                    in the file is applied at render, not in this draft.
+                  </p>
+                </div>
+              </details>
+              <details id="captions-section">
+                <summary>Captions <span>05</span></summary>
+                <div class="control-body">
+                  <button id="transcribe" class="button small-button" type="button">
+                    Transcribe locally
+                  </button>
+                  <p class="field-note">
+                    Create captions from source audio on this computer. Replaces
+                    current captions; review the words and timing before rendering.
+                  </p>
+                  <p class="field-note">Times use the original recording, in seconds.</p>
+                  <label>Import SRT or VTT<input id="subtitle-file" type="file" accept=".srt,.vtt" /></label>
+                  <button id="import-subtitles" class="button small-button" type="button">Import subtitles</button>
+                  <p class="field-note">Replaces captions after validation. Review text and timing; caption import does not provide word alignment.</p>
+                  <div id="caption-list"></div>
+                  <button id="add-caption" class="button small-button" type="button">
+                    Add caption
+                  </button>
+                </div>
+              </details>
+              <details id="frame-section" open>
+                <summary>Frame <span>06</span></summary>
+                <div class="control-body">
+                  <label>Background</label>
+                  <div class="theme-options" role="group" aria-label="Background theme">
+                    <button class="theme-option selected" type="button" data-theme="aurora">
+                      <span class="swatch aurora"></span>Aurora
+                    </button>
+                    <button class="theme-option" type="button" data-theme="midnight">
+                      <span class="swatch midnight"></span>Midnight
+                    </button>
+                    <button class="theme-option" type="button" data-theme="ember">
+                      <span class="swatch ember"></span>Ember
+                    </button>
+                  </div>
+                  <p class="field-note">
+                    These three backgrounds are the ones the exporter paints.
+                    Padding, corner, and shadow are fixed in the render.
+                  </p>
+                </div>
+              </details>
+              <div class="original-note">
+                <div>
+                  Original stays put.
+                  <p>Edits live in the timeline. Render again after you change them.</p>
+                </div>
+              </div>
+            </aside>
+          </div>
+          <section id="exports-view" class="exports-view hidden">
+            <div class="export-intro">
+              <span class="eyebrow">Output receipt</span>
+              <h2 id="export-title">Your finished formats.</h2>
+              <p id="export-description">
+                Open each format. This receipt describes those files. The editor
+                draft is not a pixel match of them.
+              </p>
+            </div>
+            <div id="export-receipt" class="export-receipt"></div>
+            <div id="export-list" class="export-grid"></div>
+          </section>
+        </main>
+        <div id="progress-panel" class="progress-panel hidden" role="status">
+          <div class="progress-card">
+            <span class="spinner" id="progress-spinner"></span>
+            <div>
+              <strong id="progress-title">Working…</strong>
+              <p id="progress-message"></p>
+              <ol id="progress-steps" class="progress-steps hidden">
+                <li data-match="Checking|Qualifying">Check the preserved recording</li>
+                <li data-match="Composing">Compose the frame and captions</li>
+                <li data-match="Rendering">Render landscape and vertical</li>
+                <li data-match="cover|animated|Creating">Write the still, GIF, and share page</li>
+                <li data-match="complete">Receipt</li>
+              </ol>
+              <button id="dismiss-progress" class="button small-button hidden" type="button">
+                Dismiss
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <dialog id="new-dialog">
+      <form id="create-form">
+        <div class="dialog-header">
+          <div>
+            <span class="eyebrow">Start from a recording or a URL</span>
+            <h2>New project</h2>
+          </div>
+          <button
+            id="close-dialog"
+            type="button"
+            class="icon-button"
+            aria-label="Close new project"
+          >
+            ×
+          </button>
+        </div>
+        <label>
+          Project name
+          <input
+            id="new-name"
+            required
+            maxlength="80"
+            placeholder="Your next product demo"
+          />
+        </label>
+        <div class="segmented dialog-tabs">
+          <button type="button" id="import-tab" class="active" aria-pressed="true">
+            Recording
+          </button>
+          <button type="button" id="capture-tab" aria-pressed="false">URL</button>
+        </div>
+        <div id="import-fields">
+          <label class="file-drop" id="file-drop">
+            <strong id="file-label">Choose your recording</strong>
+            <span>MP4, MOV, WebM, or MKV · original preserved</span>
+            <input
+              id="media-file"
+              type="file"
+              accept="video/*,.mkv"
+              aria-label="Choose recording"
+            />
+          </label>
+        </div>
+        <div id="capture-fields" class="hidden">
+          <label>
+            Web app URL
+            <input
+              id="capture-url"
+              type="url"
+              placeholder="https://your-product.example"
+            />
+          </label>
+          <p class="field-note">
+            Public web apps only. No authentication, private network addresses,
+            or sensitive data. Capture opens a fresh browser session.
+          </p>
+          <label>
+            Review capture steps (JSON)
+            <textarea id="capture-steps" rows="7" spellcheck="false">
+[
+  {"type": "wait", "ms": 1500},
+  {"type": "scroll", "deltaY": 400},
+  {"type": "wait", "ms": 1500}
+]</textarea>
+          </label>
+          <p class="field-note">
+            Up to 12 actions / 60 seconds. Actions: wait, click, scroll, fill.
+            Use visible selectors and synthetic data.
+          </p>
+          <label class="checkbox-label">
+            <input id="flow-reviewed" type="checkbox" />
+            I reviewed the URL and steps to be executed.
+          </label>
+        </div>
+        <div id="create-error" class="inline-error hidden" role="alert"></div>
+        <div class="dialog-footer">
+          <span class="small muted">Stored on this computer</span>
+          <button type="submit" id="create-project" class="button dark">
+            Create project
+          </button>
+        </div>
+      </form>
+    </dialog>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>

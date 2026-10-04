@@ -1,0 +1,24 @@
+export const audit = {pages: [
+  {url: 'https://example.test/', title: 'Field Notes', description: 'A notebook for shared project notes.', links: ['/guide#start']},
+  {url: 'https://example.test/guide', title: 'Guide', text: 'Export a notebook as Markdown.'},
+  {url: 'https://example.test/examples', title: 'Examples', text: 'Group notes by project.'},
+]};
+export const intake = {
+  sources: [
+    {id: 'manual', label: 'Product manual supplied by editor', url: 'https://example.test/guide', excerpt: 'Export a notebook as Markdown.'},
+    {id: 'limits', label: 'Reviewed limitations note', excerpt: 'Offline synchronization is not available.'},
+    {id: 'audience', label: 'Audience brief', excerpt: 'The notebook is for project teams.'},
+  ],
+  facts: [
+    {id: 'export', text: 'Export a notebook as Markdown.', sourceIds: ['manual'], topic: 'workflow'},
+    {id: 'offline', text: 'Offline synchronization is not available.', sourceIds: ['limits'], topic: 'limitations'},
+    {id: 'teams', text: 'The notebook is for project teams.', sourceIds: ['audience'], topic: 'audience'},
+    {id: 'fake-price', text: 'Plans cost $9 per month.', sourceIds: ['manual'], topic: 'pricing'},
+    {id: 'idea', text: 'Teams might want a daily summary.', disposition: 'hypothesis'},
+  ],
+  questions: [
+    {question: 'Can I export my notes?', factIds: ['export']},
+    {question: 'What does it cost?', factIds: ['fake-price']},
+    {question: 'Can I work offline?', factIds: ['offline']},
+  ],
+};

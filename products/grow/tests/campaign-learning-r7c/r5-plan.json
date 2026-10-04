@@ -1,0 +1,826 @@
+{
+  "schemaVersion": 1,
+  "readiness": {
+    "label": "UNKNOWN",
+    "status": "REQUIRES_REVIEW",
+    "destination": "USER_SUPPLIED_NOT_VERIFIED",
+    "technicalEvidence": "NOT_COLLECTED",
+    "tracking": "NOT_CONNECTED",
+    "specialCategory": "USER_DECLARED_NONE",
+    "channelAvailability": "NOT_VERIFIED"
+  },
+  "status": "SAVED_PLAN_NOT_PUBLISHED",
+  "accountStatus": "NOT CONNECTED",
+  "input": {
+    "totalBudget": 100,
+    "currency": "USD",
+    "days": 7,
+    "goal": "LEADS",
+    "businessName": "Cedar Bakery",
+    "category": "Local bakery",
+    "geography": "Portland, Oregon",
+    "audience": "Neighbors planning celebrations",
+    "url": "https://example.com/menu",
+    "landingPage": "",
+    "offer": "Explore our seasonal cake menu",
+    "assets": "Owned bakery product photography; no customer list",
+    "organicEvidence": "",
+    "remarketingAudience": "NO",
+    "customerList": "NO",
+    "retargetingRequested": false,
+    "specialCategory": "NONE",
+    "primaryChannel": "META",
+    "chatgptAvailability": "UNKNOWN",
+    "averageOrderValue": null,
+    "leadValue": null,
+    "conversionRate": null,
+    "contributionMargin": null
+  },
+  "budget": {
+    "label": "PLANNER_HEURISTIC",
+    "sourceIds": [
+      "lf-allocation"
+    ],
+    "totalCents": 10000,
+    "currency": "USD",
+    "days": 7,
+    "primaryChannel": "META",
+    "primaryCents": 9000,
+    "retargetingCents": 0,
+    "reserveCents": 1000,
+    "organicCents": 0,
+    "paidCents": 9000,
+    "averageDailyCents": 1285.7142857142858,
+    "campaignCount": 1,
+    "creativeCount": 3,
+    "checkpoints": [
+      1,
+      4,
+      7
+    ],
+    "schedule": [
+      {
+        "day": 1,
+        "primaryCents": 1286,
+        "retargetingCents": 0
+      },
+      {
+        "day": 2,
+        "primaryCents": 1286,
+        "retargetingCents": 0
+      },
+      {
+        "day": 3,
+        "primaryCents": 1286,
+        "retargetingCents": 0
+      },
+      {
+        "day": 4,
+        "primaryCents": 1286,
+        "retargetingCents": 0
+      },
+      {
+        "day": 5,
+        "primaryCents": 1286,
+        "retargetingCents": 0
+      },
+      {
+        "day": 6,
+        "primaryCents": 1285,
+        "retargetingCents": 0
+      },
+      {
+        "day": 7,
+        "primaryCents": 1285,
+        "retargetingCents": 0
+      }
+    ]
+  },
+  "creative": {
+    "label": "PLANNER_HEURISTIC",
+    "sourceIds": [
+      "lf-allocation"
+    ],
+    "brandName": "Cedar Bakery",
+    "audience": "Neighbors planning celebrations",
+    "objective": "LEADS",
+    "offer": "Explore our seasonal cake menu",
+    "headline": "Explore Cedar Bakery",
+    "body": "Explore our seasonal cake menu",
+    "cta": "Request details",
+    "destination": "https://example.com/menu",
+    "assets": "Owned bakery product photography; no customer list",
+    "aspectRatios": [
+      "9:16",
+      "1:1",
+      "4:5"
+    ],
+    "angles": [
+      {
+        "concept": "spotlight",
+        "angle": "Offer and practical value",
+        "headline": "Explore Cedar Bakery",
+        "body": "Explore our seasonal cake menu",
+        "cta": "Request details"
+      },
+      {
+        "concept": "editorial",
+        "angle": "Decision support",
+        "headline": "Is Cedar Bakery right for you?",
+        "body": "Review the local bakery details and decide whether the offering fits your needs.",
+        "cta": "See the details"
+      },
+      {
+        "concept": "signal",
+        "angle": "Next step",
+        "headline": "Take a closer look",
+        "body": "Ask Cedar Bakery about the offering, availability and next steps.",
+        "cta": "Ask a question"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "title": "PLAN SUMMARY",
+      "recommendations": [
+        {
+          "label": "USER_INPUT",
+          "text": "Cedar Bakery · Local bakery · Portland, Oregon · Neighbors planning celebrations. Goal: LEADS. Budget USD 100.00 / 7 days.",
+          "sourceIds": []
+        },
+        {
+          "label": "PLANNER_HEURISTIC",
+          "text": "Plan one META campaign. Account status: NOT CONNECTED.",
+          "sourceIds": [
+            "lf-allocation"
+          ]
+        },
+        {
+          "label": "UNKNOWN",
+          "text": "No predicted rankings, citations, leads, sales, CPA or ROAS. Paid readiness requires destination, tracking, category and account review.",
+          "sourceIds": []
+        }
+      ]
+    },
+    {
+      "title": "WHY THIS OBJECTIVE",
+      "recommendations": [
+        {
+          "label": "USER_INPUT",
+          "text": "Selected goal: LEADS.",
+          "sourceIds": []
+        },
+        {
+          "label": "PLANNER_HEURISTIC",
+          "text": "Suggested Meta objective: Leads. Evaluate the selected outcome, not a substitute engagement metric.",
+          "sourceIds": [
+            "lf-allocation"
+          ]
+        },
+        {
+          "label": "OFFICIAL_GUIDANCE",
+          "text": "Match objectives, conversion locations, events and performance goals to the business goal.",
+          "sourceIds": [
+            "meta-objective"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "BUDGET PLAN",
+      "recommendations": [
+        {
+          "label": "PLANNER_HEURISTIC",
+          "text": "USD 90.00 primary + USD 0.00 eligible retargeting + USD 10.00 unspent reserve = USD 100.00. 1 paid campaign; no separate testing campaign. Organic media spend $0; labor is not free.",
+          "sourceIds": [
+            "lf-allocation"
+          ]
+        },
+        {
+          "label": "PLANNER_HEURISTIC",
+          "text": "Paid average USD 12.86/day, rounded for display; the integer-cent day ledger is exact. Check days 1, 4, 7.",
+          "sourceIds": [
+            "lf-allocation"
+          ]
+        },
+        {
+          "label": "PLANNER_HEURISTIC",
+          "text": "No separate retargeting budget: usable audience, explicit request and sufficient budget/duration must all be present.",
+          "sourceIds": [
+            "lf-allocation"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "META/PAID SOCIAL",
+      "recommendations": [
+        {
+          "label": "OFFICIAL_GUIDANCE",
+          "text": "Consider Advantage+ placements where appropriate; manual setups are advised to use six or more placements. Customize creative for native 9:16 Reels, audio and safe zones; use A/B tests to learn.",
+          "sourceIds": [
+            "meta-reels"
+          ]
+        },
+        {
+          "label": "OFFICIAL_GUIDANCE",
+          "text": "Plan placements, budget and schedule in Ads Manager.",
+          "sourceIds": [
+            "meta-budget"
+          ]
+        },
+        {
+          "label": "OFFICIAL_GUIDANCE",
+          "text": "Use goal-aligned metrics to analyze campaign results and review placement and creative options.",
+          "sourceIds": [
+            "meta-measure"
+          ]
+        },
+        {
+          "label": "OFFICIAL_GUIDANCE",
+          "text": "Official category enumeration distinguishes housing, employment, financial products/services and political/social-issue ads.",
+          "sourceIds": [
+            "meta-categories"
+          ]
+        },
+        {
+          "label": "PLANNER_HEURISTIC",
+          "text": "For a small budget, keep one campaign/ad set unless an eligible retargeting slice is justified. Use a lifetime envelope if supported; campaign and ad-set budget controls must be verified in the current account. Broad eligible placements are different from unrestricted audience targeting.",
+          "sourceIds": [
+            "lf-allocation"
+          ]
+        },
+        {
+          "label": "USER_INPUT",
+          "text": "Special category: NONE.",
+          "sourceIds": []
+        },
+        {
+          "label": "UNKNOWN",
+          "text": "Confirm current category, regional restrictions and destination policy before external use. This planner does not determine legal eligibility.",
+          "sourceIds": []
+        }
+      ]
+    },
+    {
+      "title": "ORGANIC SEO",
+      "recommendations": [
+        {
+          "label": "OFFICIAL_GUIDANCE",
+          "text": "Prioritize original information, firsthand expertise, clear sourcing and a satisfying answer for the intended audience.",
+          "sourceIds": [
+            "google-helpful"
+          ]
+        },
+        {
+          "label": "OFFICIAL_GUIDANCE",
+          "text": "Review titles, snippets, images/video and supported structured data. Markup helps understanding and rich-result eligibility; it does not guarantee display.",
+          "sourceIds": [
+            "google-appearance"
+          ]
+        },
+        {
+          "label": "OFFICIAL_GUIDANCE",
+          "text": "Use accurate organization identity, URL, contact and logo details, choosing the most specific applicable subtype. Include only applicable properties.",
+          "sourceIds": [
+            "google-org"
+          ]
+        },
+        {
+          "label": "OFFICIAL_GUIDANCE",
+          "text": "Use the relevant LocalBusiness type with factual location and business details; validate markup and inspect Search Console. Rich results are not guaranteed.",
+          "sourceIds": [
+            "google-local"
+          ]
+        },
+        {
+          "label": "OFFICIAL_GUIDANCE",
+          "text": "Software rich-result eligibility has required properties including name, offer price and rating or review. Never invent reviews; validate supported markup and inspect crawlability.",
+          "sourceIds": [
+            "google-software"
+          ]
+        },
+        {
+          "label": "PLANNER_HEURISTIC",
+          "text": "Choose schema that matches the actual business and visible facts; local location/hours, product price/availability, or software features/pricing as applicable. Do not invent reviews or publish every schema type. Draft one useful audience question and answer with evidence; review media descriptions and mobile usability.",
+          "sourceIds": [
+            "lf-allocation"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "AI DISCOVERY",
+      "recommendations": [
+        {
+          "label": "OFFICIAL_GUIDANCE",
+          "text": "Foundational SEO still applies to AI search: make original useful content crawlable, maintain accurate business/product details and useful images/video. No special AI schema, AI text file or llms.txt is required; Google ignores llms.txt. Monitor Search Console including its documented generative AI performance reporting.",
+          "sourceIds": [
+            "google-ai"
+          ]
+        },
+        {
+          "label": "OFFICIAL_GUIDANCE",
+          "text": "OAI-SearchBot serves search discovery, GPTBot governs potential training, and OAI-AdsBot validates submitted ad destinations. These controls are distinct.",
+          "sourceIds": [
+            "openai-bots"
+          ]
+        },
+        {
+          "label": "OFFICIAL_GUIDANCE",
+          "text": "Allow OAI-SearchBot if search summaries are desired; referral analytics can observe utm_source=chatgpt.com. Access is not a promise of citation or inclusion.",
+          "sourceIds": [
+            "openai-publishers"
+          ]
+        },
+        {
+          "label": "OFFICIAL_GUIDANCE",
+          "text": "ClaudeBot collects potential training data; Claude-User retrieves on user request; Claude-SearchBot supports search. Robots controls affect the relevant access separately.",
+          "sourceIds": [
+            "claude-bots"
+          ]
+        },
+        {
+          "label": "OFFICIAL_GUIDANCE",
+          "text": "Claude web search grounds answers in web content and citations. Verify important facts against authoritative sources; this is not publisher ranking guidance.",
+          "sourceIds": [
+            "claude-search"
+          ]
+        },
+        {
+          "label": "OFFICIAL_GUIDANCE",
+          "text": "Search partner noindex controls and crawler restrictions have distinct effects on search outputs and direct access. No discovery guarantee follows from allowance.",
+          "sourceIds": [
+            "claude-removal"
+          ]
+        },
+        {
+          "label": "OFFICIAL_GUIDANCE",
+          "text": "The developer tool can search and browse the web with allowed or excluded domains. API domain filters are caller controls, not webmaster ranking signals.",
+          "sourceIds": [
+            "xai-search"
+          ]
+        },
+        {
+          "label": "OFFICIAL_GUIDANCE",
+          "text": "API responses expose encountered source URLs and optional inline citations; inline citations are not promised on every answer.",
+          "sourceIds": [
+            "xai-citations"
+          ]
+        },
+        {
+          "label": "UNKNOWN",
+          "text": "NO_OFFICIAL_XAI_WEBMASTER_OPTIMIZATION_RULE_IDENTIFIED. The reviewed tool docs and bounded official-domain search establish search/browse capabilities, not a crawler identity or ranking recipe.",
+          "sourceIds": [
+            "xai-boundary"
+          ]
+        },
+        {
+          "label": "UNKNOWN",
+          "text": "Crawler allowance is not indexing, citation or ranking. Live WAF/CDN behavior and external search inclusion remain unknown.",
+          "sourceIds": []
+        }
+      ]
+    },
+    {
+      "title": "LANDING PAGE CHECKLIST",
+      "recommendations": [
+        {
+          "label": "PLANNER_HEURISTIC",
+          "text": "Match the ad promise to the relevant product/offer page. Check phone-width readability, a clear action, truthful price/terms and a working form or checkout. Review consent and contact details. Do not send traffic to an unreviewed destination.",
+          "sourceIds": [
+            "lf-allocation"
+          ]
+        },
+        {
+          "label": "USER_INPUT",
+          "text": "Selected destination: https://example.com/menu",
+          "sourceIds": []
+        },
+        {
+          "label": "UNKNOWN",
+          "text": "No existing Grow audit. Technical and content readiness is UNKNOWN; planning does not launch a crawler.",
+          "sourceIds": []
+        }
+      ]
+    },
+    {
+      "title": "CREATIVE BRIEF",
+      "recommendations": [
+        {
+          "label": "PLANNER_HEURISTIC",
+          "text": "Three meaningful angles: Offer and practical value; Decision support; Next step. Review all copy against supplied facts. Produce 9:16, 1:1 and 4:5 variants using the existing Grow layouts.",
+          "sourceIds": [
+            "lf-allocation"
+          ]
+        },
+        {
+          "label": "USER_INPUT",
+          "text": "Offer: Explore our seasonal cake menu; available assets: Owned bakery product photography; no customer list.",
+          "sourceIds": []
+        },
+        {
+          "label": "PLANNER_HEURISTIC",
+          "text": "The existing motion render is an 8-second silent draft. Add licensed audio in your editing workflow if preparing Reels; check current safe zones and placement previews before external use. No claim that this local render is platform-approved.",
+          "sourceIds": [
+            "lf-allocation"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "TEST PLAN",
+      "recommendations": [
+        {
+          "label": "PLANNER_HEURISTIC",
+          "text": "Compare distinct offer/value, decision-support and next-step messages. Keep audience, destination and measurement consistent for a useful comparison; a formal randomized A/B test is different from unequal ad delivery. Small-budget results may be inconclusive. Do not create another testing campaign by default.",
+          "sourceIds": [
+            "lf-allocation"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "MEASUREMENT",
+      "recommendations": [
+        {
+          "label": "PLANNER_HEURISTIC",
+          "text": "Track qualified inquiries and cost per qualified lead. Validate event firing and deduplication before interpreting results. Use UTM-tagged links; compare platform attribution to business records. A click is not a conversion.",
+          "sourceIds": [
+            "lf-allocation"
+          ]
+        },
+        {
+          "label": "UNKNOWN",
+          "text": "No account, pixel, Search Console, referral or conversion measurements are connected. User-provided notes are not independently observed evidence.",
+          "sourceIds": []
+        }
+      ]
+    },
+    {
+      "title": "REALLOCATION",
+      "recommendations": [
+        {
+          "label": "PLANNER_HEURISTIC",
+          "text": "Review days 1, 4, 7. Stop planned spend for broken destinations, invalid tracking or policy problems. Otherwise compare qualified outcomes after attribution lag; retain reserve when evidence is insufficient. Reallocate only after operator review, within the original total. No automatic bid or spend changes.",
+          "sourceIds": [
+            "lf-allocation"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "ASSUMPTIONS/UNKNOWNS",
+      "recommendations": [
+        {
+          "label": "USER_INPUT",
+          "text": "Remarketing audience: NO; customer list: NO; existing organic/AI evidence: Not supplied.",
+          "sourceIds": []
+        },
+        {
+          "label": "UNKNOWN",
+          "text": "Audience usability, permissions, offer accuracy, tracking quality, ad approval and business outcomes are not verified. No third-party case-study result is a forecast.",
+          "sourceIds": []
+        },
+        {
+          "label": "PLANNER_HEURISTIC",
+          "text": "Allocation percentages, thresholds, checkpoint timing, objective mapping and creative angles are LaunchForge planning policy, not official platform minimums.",
+          "sourceIds": [
+            "lf-allocation"
+          ]
+        }
+      ]
+    }
+  ],
+  "scenarios": [],
+  "warnings": [],
+  "utm": [
+    {
+      "concept": "spotlight",
+      "label": "PLANNER_HEURISTIC",
+      "destination": "https://example.com/menu?utm_source=meta&utm_medium=paid&utm_campaign=grow-407ae0a4&utm_content=spotlight",
+      "status": "DRAFT_REVIEW_REQUIRED"
+    },
+    {
+      "concept": "editorial",
+      "label": "PLANNER_HEURISTIC",
+      "destination": "https://example.com/menu?utm_source=meta&utm_medium=paid&utm_campaign=grow-407ae0a4&utm_content=editorial",
+      "status": "DRAFT_REVIEW_REQUIRED"
+    },
+    {
+      "concept": "signal",
+      "label": "PLANNER_HEURISTIC",
+      "destination": "https://example.com/menu?utm_source=meta&utm_medium=paid&utm_campaign=grow-407ae0a4&utm_content=signal",
+      "status": "DRAFT_REVIEW_REQUIRED"
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "google-ai",
+      "vendor": "Google",
+      "title": "Optimizing for AI features",
+      "url": "https://developers.google.com/search/docs/fundamentals/ai-optimization-guide",
+      "retrievedAt": "2026-10-03T23:13:06.965086+00:00",
+      "type": "OFFICIAL_GUIDANCE",
+      "rule": "Foundational SEO still applies to AI search: make original useful content crawlable, maintain accurate business/product details and useful images/video. No special AI schema, AI text file or llms.txt is required; Google ignores llms.txt. Monitor Search Console including its documented generative AI performance reporting.",
+      "applicableChannels": [
+        "ORGANIC",
+        "AI_DISCOVERY"
+      ],
+      "confidence": "DIRECT_PUBLIC_SOURCE",
+      "limitations": "Snapshot of public documentation; no outcome guarantee.",
+      "access": "PUBLIC_BODY"
+    },
+    {
+      "sourceId": "google-helpful",
+      "vendor": "Google",
+      "title": "Creating helpful reliable people-first content",
+      "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+      "retrievedAt": "2026-10-03T23:13:06.965086+00:00",
+      "type": "OFFICIAL_GUIDANCE",
+      "rule": "Prioritize original information, firsthand expertise, clear sourcing and a satisfying answer for the intended audience.",
+      "applicableChannels": [
+        "ORGANIC"
+      ],
+      "confidence": "DIRECT_PUBLIC_SOURCE",
+      "limitations": "Snapshot of public documentation; no outcome guarantee.",
+      "access": "PUBLIC_BODY"
+    },
+    {
+      "sourceId": "google-appearance",
+      "vendor": "Google",
+      "title": "Search appearance",
+      "url": "https://developers.google.com/search/docs/appearance",
+      "retrievedAt": "2026-10-03T23:13:06.965086+00:00",
+      "type": "OFFICIAL_GUIDANCE",
+      "rule": "Review titles, snippets, images/video and supported structured data. Markup helps understanding and rich-result eligibility; it does not guarantee display.",
+      "applicableChannels": [
+        "ORGANIC"
+      ],
+      "confidence": "DIRECT_PUBLIC_SOURCE",
+      "limitations": "Snapshot of public documentation; no outcome guarantee.",
+      "access": "PUBLIC_BODY"
+    },
+    {
+      "sourceId": "google-local",
+      "vendor": "Google",
+      "title": "LocalBusiness structured data",
+      "url": "https://developers.google.com/search/docs/appearance/structured-data/local-business",
+      "retrievedAt": "2026-10-03T23:13:06.965086+00:00",
+      "type": "OFFICIAL_GUIDANCE",
+      "rule": "Use the relevant LocalBusiness type with factual location and business details; validate markup and inspect Search Console. Rich results are not guaranteed.",
+      "applicableChannels": [
+        "ORGANIC"
+      ],
+      "confidence": "DIRECT_PUBLIC_SOURCE",
+      "limitations": "Snapshot of public documentation; no outcome guarantee.",
+      "access": "PUBLIC_BODY"
+    },
+    {
+      "sourceId": "google-org",
+      "vendor": "Google",
+      "title": "Organization structured data",
+      "url": "https://developers.google.com/search/docs/appearance/structured-data/organization",
+      "retrievedAt": "2026-10-03T23:13:06.965086+00:00",
+      "type": "OFFICIAL_GUIDANCE",
+      "rule": "Use accurate organization identity, URL, contact and logo details, choosing the most specific applicable subtype. Include only applicable properties.",
+      "applicableChannels": [
+        "ORGANIC"
+      ],
+      "confidence": "DIRECT_PUBLIC_SOURCE",
+      "limitations": "Snapshot of public documentation; no outcome guarantee.",
+      "access": "PUBLIC_BODY"
+    },
+    {
+      "sourceId": "google-software",
+      "vendor": "Google",
+      "title": "SoftwareApplication structured data",
+      "url": "https://developers.google.com/search/docs/appearance/structured-data/software-app",
+      "retrievedAt": "2026-10-03T23:13:06.965086+00:00",
+      "type": "OFFICIAL_GUIDANCE",
+      "rule": "Software rich-result eligibility has required properties including name, offer price and rating or review. Never invent reviews; validate supported markup and inspect crawlability.",
+      "applicableChannels": [
+        "ORGANIC"
+      ],
+      "confidence": "DIRECT_PUBLIC_SOURCE",
+      "limitations": "Snapshot of public documentation; no outcome guarantee.",
+      "access": "PUBLIC_BODY"
+    },
+    {
+      "sourceId": "openai-bots",
+      "vendor": "OpenAI",
+      "title": "Overview of OpenAI crawlers",
+      "url": "https://developers.openai.com/api/docs/bots",
+      "retrievedAt": "2026-10-03T23:13:06.965086+00:00",
+      "type": "OFFICIAL_GUIDANCE",
+      "rule": "OAI-SearchBot serves search discovery, GPTBot governs potential training, and OAI-AdsBot validates submitted ad destinations. These controls are distinct.",
+      "applicableChannels": [
+        "AI_DISCOVERY",
+        "CHATGPT_ADS"
+      ],
+      "confidence": "DIRECT_PUBLIC_SOURCE",
+      "limitations": "Snapshot of public documentation; no outcome guarantee.",
+      "access": "PUBLIC_BODY"
+    },
+    {
+      "sourceId": "openai-publishers",
+      "vendor": "OpenAI",
+      "title": "Publishers and Developers FAQ",
+      "url": "https://help.openai.com/en/articles/12627856-publishers-and-developers-faq",
+      "retrievedAt": "2026-10-03T23:13:06.965086+00:00",
+      "type": "OFFICIAL_GUIDANCE",
+      "rule": "Allow OAI-SearchBot if search summaries are desired; referral analytics can observe utm_source=chatgpt.com. Access is not a promise of citation or inclusion.",
+      "applicableChannels": [
+        "AI_DISCOVERY"
+      ],
+      "confidence": "DIRECT_PUBLIC_SOURCE",
+      "limitations": "Snapshot of public documentation; no outcome guarantee.",
+      "access": "PUBLIC_BODY"
+    },
+    {
+      "sourceId": "claude-bots",
+      "vendor": "Anthropic",
+      "title": "Crawler controls",
+      "url": "https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler",
+      "retrievedAt": "2026-10-03T23:13:06.965086+00:00",
+      "type": "OFFICIAL_GUIDANCE",
+      "rule": "ClaudeBot collects potential training data; Claude-User retrieves on user request; Claude-SearchBot supports search. Robots controls affect the relevant access separately.",
+      "applicableChannels": [
+        "AI_DISCOVERY"
+      ],
+      "confidence": "DIRECT_PUBLIC_SOURCE",
+      "limitations": "Snapshot of public documentation; no outcome guarantee.",
+      "access": "PUBLIC_BODY"
+    },
+    {
+      "sourceId": "claude-search",
+      "vendor": "Anthropic",
+      "title": "Enable and use web search",
+      "url": "https://support.claude.com/en/articles/10684626-enable-and-use-web-search",
+      "retrievedAt": "2026-10-03T23:13:06.965086+00:00",
+      "type": "PLATFORM_FACT",
+      "rule": "Claude web search grounds answers in web content and citations. Verify important facts against authoritative sources; this is not publisher ranking guidance.",
+      "applicableChannels": [
+        "AI_DISCOVERY"
+      ],
+      "confidence": "DIRECT_PUBLIC_SOURCE",
+      "limitations": "Snapshot of public documentation; no outcome guarantee.",
+      "access": "PUBLIC_BODY"
+    },
+    {
+      "sourceId": "claude-removal",
+      "vendor": "Anthropic",
+      "title": "Report block and remove content",
+      "url": "https://support.claude.com/en/articles/10684638-report-block-and-remove-content-from-claude",
+      "retrievedAt": "2026-10-03T23:13:06.965086+00:00",
+      "type": "PLATFORM_FACT",
+      "rule": "Search partner noindex controls and crawler restrictions have distinct effects on search outputs and direct access. No discovery guarantee follows from allowance.",
+      "applicableChannels": [
+        "AI_DISCOVERY"
+      ],
+      "confidence": "DIRECT_PUBLIC_SOURCE",
+      "limitations": "Snapshot of public documentation; no outcome guarantee.",
+      "access": "PUBLIC_BODY"
+    },
+    {
+      "sourceId": "xai-search",
+      "vendor": "xAI",
+      "title": "Web Search",
+      "url": "https://docs.x.ai/developers/tools/web-search",
+      "retrievedAt": "2026-10-03T23:13:06.965086+00:00",
+      "type": "PLATFORM_FACT",
+      "rule": "The developer tool can search and browse the web with allowed or excluded domains. API domain filters are caller controls, not webmaster ranking signals.",
+      "applicableChannels": [
+        "AI_DISCOVERY"
+      ],
+      "confidence": "DIRECT_PUBLIC_SOURCE",
+      "limitations": "Snapshot of public documentation; no outcome guarantee.",
+      "access": "PUBLIC_BODY"
+    },
+    {
+      "sourceId": "xai-citations",
+      "vendor": "xAI",
+      "title": "Citations",
+      "url": "https://docs.x.ai/developers/tools/citations",
+      "retrievedAt": "2026-10-03T23:13:06.965086+00:00",
+      "type": "PLATFORM_FACT",
+      "rule": "API responses expose encountered source URLs and optional inline citations; inline citations are not promised on every answer.",
+      "applicableChannels": [
+        "AI_DISCOVERY"
+      ],
+      "confidence": "DIRECT_PUBLIC_SOURCE",
+      "limitations": "Snapshot of public documentation; no outcome guarantee.",
+      "access": "PUBLIC_BODY"
+    },
+    {
+      "sourceId": "xai-boundary",
+      "vendor": "xAI",
+      "title": "Tools Overview",
+      "url": "https://docs.x.ai/developers/tools/overview",
+      "retrievedAt": "2026-10-03T23:13:06.965086+00:00",
+      "type": "AVAILABILITY_BOUNDARY",
+      "rule": "NO_OFFICIAL_XAI_WEBMASTER_OPTIMIZATION_RULE_IDENTIFIED. The reviewed tool docs and bounded official-domain search establish search/browse capabilities, not a crawler identity or ranking recipe.",
+      "applicableChannels": [
+        "AI_DISCOVERY"
+      ],
+      "confidence": "DIRECT_PUBLIC_SOURCE",
+      "limitations": "Bounded search of docs.x.ai and x.ai, not proof that no guidance exists anywhere. No Grok score or invented user-agent.",
+      "access": "PUBLIC_BODY"
+    },
+    {
+      "sourceId": "meta-reels",
+      "vendor": "Meta",
+      "title": "Instagram and Facebook Reels ads",
+      "url": "https://www.facebook.com/business/ads/facebook-instagram-reels-ads",
+      "retrievedAt": "2026-10-03T23:13:06.965086+00:00",
+      "type": "OFFICIAL_GUIDANCE",
+      "rule": "Consider Advantage+ placements where appropriate; manual setups are advised to use six or more placements. Customize creative for native 9:16 Reels, audio and safe zones; use A/B tests to learn.",
+      "applicableChannels": [
+        "META"
+      ],
+      "confidence": "OFFICIAL_INDEXED_BODY",
+      "limitations": "Direct open redirected to login (UNAVAILABLE_PUBLICLY). Official indexed full body was available and read; crawl freshness is older than retrieval. Recheck live account specs before publication. Case-study percentages are not forecasts.",
+      "access": "INDEXED_BODY_ONLY"
+    },
+    {
+      "sourceId": "meta-objective",
+      "vendor": "Meta",
+      "title": "Selecting campaign objectives and conversion settings",
+      "url": "https://www.facebookblueprint.com/student/path/253165-selecting-objectives-course",
+      "retrievedAt": "2026-10-03T23:13:06.965086+00:00",
+      "type": "OFFICIAL_GUIDANCE",
+      "rule": "Match objectives, conversion locations, events and performance goals to the business goal.",
+      "applicableChannels": [
+        "META"
+      ],
+      "confidence": "DIRECT_PUBLIC_SOURCE",
+      "limitations": "Public course description read; login lesson bodies not read.",
+      "access": "PUBLIC_BODY"
+    },
+    {
+      "sourceId": "meta-budget",
+      "vendor": "Meta",
+      "title": "Choose placements budget and schedule",
+      "url": "https://www.facebookblueprint.com/student/path/211542-ads-manager-budgeting-course",
+      "retrievedAt": "2026-10-03T23:13:06.965086+00:00",
+      "type": "OFFICIAL_GUIDANCE",
+      "rule": "Plan placements, budget and schedule in Ads Manager.",
+      "applicableChannels": [
+        "META"
+      ],
+      "confidence": "DIRECT_PUBLIC_SOURCE",
+      "limitations": "Public course overview only; campaign versus ad-set budget mechanics behind lessons were not verified. R5 single campaign allocation is a heuristic.",
+      "access": "PUBLIC_BODY"
+    },
+    {
+      "sourceId": "meta-measure",
+      "vendor": "Meta",
+      "title": "Meta Ads Manager learning",
+      "url": "https://www.facebookblueprint.com/student/collection/507792-meta-ads-manager-learning",
+      "retrievedAt": "2026-10-03T23:13:06.965086+00:00",
+      "type": "OFFICIAL_GUIDANCE",
+      "rule": "Use goal-aligned metrics to analyze campaign results and review placement and creative options.",
+      "applicableChannels": [
+        "META"
+      ],
+      "confidence": "DIRECT_PUBLIC_SOURCE",
+      "limitations": "Public learning catalog only; detailed lesson bodies unavailable.",
+      "access": "PUBLIC_BODY"
+    },
+    {
+      "sourceId": "meta-categories",
+      "vendor": "Meta",
+      "title": "Ad Library API category enumeration",
+      "url": "https://es-la.facebook.com/ads/library/api",
+      "retrievedAt": "2026-10-03T23:13:06.965086+00:00",
+      "type": "PLATFORM_FACT",
+      "rule": "Official category enumeration distinguishes housing, employment, financial products/services and political/social-issue ads.",
+      "applicableChannels": [
+        "META"
+      ],
+      "confidence": "OFFICIAL_INDEXED_BODY",
+      "limitations": "Official indexed API documentation; not a complete legal eligibility or regional advertising policy assessment.",
+      "access": "INDEXED_BODY_ONLY"
+    },
+    {
+      "sourceId": "lf-allocation",
+      "vendor": "LaunchForge",
+      "title": "R5 bounded allocation policy",
+      "url": "products/grow/research/growth-planner-r5/RESEARCH.md",
+      "retrievedAt": "2026-10-03T23:13:06.965086+00:00",
+      "type": "LAUNCHFORGE_HEURISTIC",
+      "rule": "Keep one paid channel and one objective. Hold 10% in reserve. Under $500 or $20/day avoid a separate retargeting slice; above both, allocate 10% only with user-reported usable audience and explicit retargeting request. Flag under $10/day as thin. Three angles, days 1/mid/end checks; no separate testing campaign.",
+      "applicableChannels": [
+        "META",
+        "GOOGLE_ADS",
+        "CHATGPT_ADS",
+        "ORGANIC"
+      ],
+      "confidence": "EXPLICIT_PRODUCT_POLICY",
+      "limitations": "Conservative product choices, not platform minimums, optimized allocation, statistical power or predicted results.",
+      "access": "LOCAL_POLICY"
+    }
+  ],
+  "auditRunId": null,
+  "revision": "74ba476dd9438f753204c99b72bf4f0ad30dc607495e1fb5dcdad6a18b1cf7e3"
+}

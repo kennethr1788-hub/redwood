@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 2,
+  "brandName": "Redwood Grow",
+  "headline": "You built it. Now get it seen.",
+  "body": "Turn your product into a campaign worth sharing.",
+  "summary": "A local growth workbench for product evidence, content and campaign exports.",
+  "cta": "Explore Grow",
+  "url": "https://github.com/kennethr1788-hub/redwood",
+  "color": "#d7ef85",
+  "confirmed": true,
+  "tokens": {
+    "accent": "#d7ef85",
+    "paper": "#f4f1e8",
+    "dark": "#14231c",
+    "ink": "#17291f",
+    "muted": "#53634f",
+    "font": "Arial",
+    "displayFont": "Georgia"
+  },
+  "variants": [
+    {
+      "concept": "spotlight",
+      "headline": "You built it. Now get it seen.",
+      "body": "Product evidence. Clear content. Campaigns ready to share.",
+      "cta": "Explore Grow"
+    },
+    {
+      "concept": "editorial",
+      "headline": "Good products deserve a good entrance.",
+      "body": "From your product URL to an editable campaign collection.",
+      "cta": "Take a closer look"
+    },
+    {
+      "concept": "signal",
+      "headline": "Your next launch starts here.",
+      "body": "Discover. Create. Export. One local growth workspace.",
+      "cta": "Make your next move"
+    }
+  ]
+}

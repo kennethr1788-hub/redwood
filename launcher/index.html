@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>%LABEL_UMBRELLA% — Local workspace</title>
+    <meta
+      name="description"
+      content="%LABEL_UMBRELLA%: set up and resume local work in %LABEL_BUILD%, %LABEL_STUDIO%, and %LABEL_GROW%."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23173D32'/%3E%3Cpath d='M8 21.5 16 8l8 13.5H8z' fill='none' stroke='%23DCCAA3' stroke-width='1.8' stroke-linejoin='round'/%3E%3C/svg%3E"
+    />
+  </head>
+  <body>
+    <a class="skip" href="#content">Skip to content</a>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Application shell">
+        <div class="brand-row"><div><a class="wordmark" href="#home">%LABEL_UMBRELLA%</a><p class="brand-caption">%LABEL_BUILD%. %LABEL_STUDIO%. %LABEL_GROW%.</p></div><button id="menu-toggle" type="button" aria-expanded="false" aria-controls="shell-navigation">Menu</button></div>
+        <nav id="shell-navigation" aria-label="Workspace navigation">
+          <div class="nav-group"><p class="eyebrow">Workspace</p><a href="#home" data-route="home">Projects / recent work</a><a href="#setup" data-route="setup">Start with what you have</a></div>
+          <div class="nav-group"><p class="eyebrow">Products</p><a href="#build" data-route="build">%LABEL_BUILD%</a><a href="#studio" data-route="studio">%LABEL_STUDIO%</a><a href="#grow" data-route="grow">%LABEL_GROW%</a></div>
+          <div class="nav-group"><p class="eyebrow">Guidance</p><a href="#advisor" data-route="advisor">%LABEL_ADVISOR% <span id="advisor-nav-mode" class="nav-note">Codex expert</span></a></div><div class="nav-group utilities"><p class="eyebrow">Utilities</p><a href="#connections" data-route="connections">Connections</a><a href="#settings" data-route="settings">Settings</a></div>
+        </nav>
+      </aside>
+      <div class="workspace">
+        <header class="workspace-header"><div><h1 id="route-title" tabindex="-1">Projects / recent work</h1><p id="current-context">Choose existing work or a starting point.</p></div><a id="next-action" class="continue" href="#setup">Start with what you have</a></header>
+        <main id="content" tabindex="-1">
+          <section id="home" data-view="home" aria-labelledby="recent-title">
+            <div id="entry" class="panel">
+              <div class="home-hero"><div><p class="eyebrow">Your work, brought together</p><h2>%LABEL_BUILD%. %LABEL_STUDIO%. %LABEL_GROW%.</h2><p class="introduction">From a working product to a polished launch. Make the application, shape its story, and prepare what comes next.</p></div><a class="continue" href="#setup">Start with what you have</a></div>
+              <ul class="entries"><li><a href="#build"><span class="stage-number">01</span><strong>%LABEL_BUILD%</strong><span class="stage-description">Turn your idea or repository into a working application you own.</span></a></li><li><a href="#studio"><span class="stage-number">02</span><strong>%LABEL_STUDIO%</strong><span class="stage-description">Shape an app or recording into a polished demo and media package.</span></a></li><li><a href="#grow"><span class="stage-number">03</span><strong>%LABEL_GROW%</strong><span class="stage-description">Prepare a reviewed growth plan, creative assets and an export package.</span></a></li></ul>
+              <p class="hint">Enter at any stage. Each product works independently and keeps its own projects.</p>
+            </div>
+            <div id="recent" class="panel"><div class="recent-heading"><h2 id="recent-title">Continue working</h2><button id="refresh-projects" type="button">Read current projects</button></div><p>Choose a current %LABEL_BUILD% project to resume. Return to %LABEL_STUDIO% or %LABEL_GROW% through its own project library.</p><div id="recent-projects" aria-live="polite"></div><div id="resume-result" aria-live="polite"></div></div>
+            <details id="path" class="panel"><summary>%LABEL_BUILD%. %LABEL_STUDIO%. %LABEL_GROW%.</summary><p>%LABEL_BUILD% creates a working application. %LABEL_STUDIO% prepares its demo and media. %LABEL_GROW% prepares a reviewed growth package. Enter at any point; earlier products are not required.</p></details>
+          </section>
+          <section id="setup" data-view="setup" hidden aria-labelledby="setup-title" class="panel">
+            <h2 id="setup-title">Start with what you have</h2><p>Choose your input and a next outcome. Manual handoff needs no connector or provider account.</p>
+        <form id="setup-form" class="setup-grid">
+          <label>Starting point<select name="startingPoint"><option value="IDEA">Idea → %LABEL_BUILD%</option><option value="REPO">Existing repo → %LABEL_BUILD%</option><option value="APP_OR_RECORDING">App or recording → %LABEL_STUDIO%</option><option value="GROW_INPUTS">Product, site, content or assets → %LABEL_GROW%</option></select></label>
+          <label>Project name<input name="projectName" required maxlength="80" autocomplete="off" /></label>
+          <label class="wide">Desired outcome<textarea name="desiredOutcome" required minlength="10" maxlength="1000" rows="3"></textarea></label>
+          <label>Audience (optional)<input name="audience" maxlength="200" autocomplete="off" /></label>
+          <label>Coding tool<select name="selectedAgentAdapterId" aria-label="Coding tool"><option value="manual">Manual / Generic — no connection required</option><option value="codex">Codex</option><option value="claude">Claude Code</option><option value="cursor">Cursor Agent</option><option value="gemini">Gemini CLI</option></select></label>
+          <p class="wide">Keep secrets out of project context. Setup checks the local product entry. Execution trust and action prerequisites stay in each product.</p>
+          <button type="submit" class="primary">Check setup</button>
+        </form>
+        <div id="setup-result" aria-live="polite"></div>
+
+            <details><summary>Provider and setup details</summary><p>Use one compatible native account/runtime when you choose an agent. Check its authentication and billing in the native client. Selecting it here does not run or authorize it.</p><a href="#connections">Review Connections</a></details>
+          </section>
+        <section id="build" data-view="build" hidden aria-labelledby="build-title" class="panel product">
+          <div class="product-copy">
+            <p class="kicker">%LABEL_UMBRELLA% %LABEL_BUILD%</p>
+            <h2 id="build-title">%LABEL_BUILD%</h2>
+            <p class="job">Turn an idea, a brief, or an existing repository into a working application you own.</p>
+            <dl>
+              <dt>Completion artifact</dt>
+              <dd>Working, user-owned application.</dd>
+            </dl>
+            <p class="alone">%LABEL_STUDIO% and %LABEL_GROW% are not required.</p>
+          </div>
+          <details class="command" open><summary>Local start command</summary>
+            <div class="command-bar">
+              <h3>Local start</h3>
+              <button type="button" data-copy="build-command">Copy %LABEL_BUILD% command</button>
+            </div>
+            <pre id="build-command"><code>cd products/build
+npm ci --ignore-scripts
+npm start</code></pre>
+            <p class="address">
+              Local address (opens a separate product tab)
+              <a href="http://127.0.0.1:4177" target="_blank" rel="noopener noreferrer">http://127.0.0.1:4177</a>.
+              Open it only after you start %LABEL_BUILD%. This page does not start %LABEL_BUILD% automatically. Use Check setup to check its local entry.
+            </p>
+            <p class="needs">From the repository root. Needs Node 22.12+, npm, and Git. Use 127.0.0.1, not localhost.</p>
+          </details>
+        </section>        <section id="studio" data-view="studio" hidden aria-labelledby="studio-title" class="panel product">
+          <div class="product-copy">
+            <p class="kicker">%LABEL_UMBRELLA% %LABEL_STUDIO%</p>
+            <h2 id="studio-title">%LABEL_STUDIO%</h2>
+            <p class="job">Turn an app URL or a recording into a polished demo and media package.</p>
+            <dl>
+              <dt>Completion artifact</dt>
+              <dd>Polished demo and media package.</dd>
+            </dl>
+            <p class="alone">%LABEL_BUILD% and %LABEL_GROW% are not required.</p>
+          </div>
+          <details class="command" open><summary>Local start command</summary>
+            <div class="command-bar">
+              <h3>Local start</h3>
+              <button type="button" data-copy="studio-command">Copy %LABEL_STUDIO% command</button>
+            </div>
+            <pre id="studio-command"><code>cd products/studio
+npm ci --ignore-scripts
+npx playwright install chromium
+npm start</code></pre>
+            <p class="address">
+              Local address (opens a separate product tab)
+              <a href="http://127.0.0.1:4318" target="_blank" rel="noopener noreferrer">http://127.0.0.1:4318</a>.
+              Open it only after you start %LABEL_STUDIO%. This page does not start %LABEL_STUDIO% automatically. Use Check setup to check its local entry.
+            </p>
+            <p class="needs">From the repository root. Needs Node 22+, npm, Playwright Chromium, and native FFmpeg and ffprobe on PATH.</p>
+          </details>
+        </section>        <section id="grow" data-view="grow" hidden aria-labelledby="grow-title" class="panel product">
+          <div class="product-copy">
+            <p class="kicker">%LABEL_UMBRELLA% %LABEL_GROW%</p>
+            <h2 id="grow-title">%LABEL_GROW%</h2>
+            <p class="job">Turn a product, site, content, or assets into a reviewed growth package.</p>
+            <dl>
+              <dt>Completion artifact</dt>
+              <dd>Reviewed growth package. An export is not a publication.</dd>
+            </dl>
+            <p class="alone">%LABEL_BUILD% and %LABEL_STUDIO% are not required.</p>
+          </div>
+          <details class="command" open><summary>Local start command</summary>
+            <div class="command-bar">
+              <h3>Local start</h3>
+              <button type="button" data-copy="grow-command">Copy %LABEL_GROW% command</button>
+            </div>
+            <pre id="grow-command"><code>cd products/grow
+npm ci --ignore-scripts
+npx playwright install chromium
+npm start</code></pre>
+            <p class="address">
+              Local address (opens a separate product tab)
+              <a href="http://127.0.0.1:4383" target="_blank" rel="noopener noreferrer">http://127.0.0.1:4383</a>.
+              Open it only after you start %LABEL_GROW%. This page does not start %LABEL_GROW% automatically. Use Check setup to check its local entry.
+            </p>
+            <p class="needs">From the repository root. Needs Node 24+, npm, Playwright Chromium, Git, and native FFmpeg with libx264.</p>
+          </details>
+        </section>
+          <section id="connections" data-view="connections" hidden aria-labelledby="connections-title" class="panel"><h2 id="connections-title">Connections</h2><p>Read-only evidence for the tools you already have. These are status records, not required account setups. Codex is the primary coding and %LABEL_ADVISOR% tool; Higgsfield is optional media support. ElevenLabs is not required for this competition. Other coding tools are optional handoffs.</p><p class="hint">Installed/detected ≠ authenticated. Authenticated ≠ verified. Verified ≠ authorized. Billing is separate; review it in the provider’s native client. UNKNOWN means no current evidence is recorded here. No provider probe or OAuth connection runs here.</p><div id="doctor-rows" aria-live="polite"></div><p id="media-summary">Optional media support has not been checked. Local work needs no media connection.</p><a href="#setup">Review setup</a></section>
+          <section id="settings" data-view="settings" hidden aria-labelledby="settings-title" class="panel"><h2 id="settings-title">Settings</h2><p>Local setup and continuity information.</p><a href="#setup">Review your setup</a><a href="#connections">Review Connections</a><details><summary>Local storage and project ownership</summary><p>Up to 16 %LABEL_BUILD% project/id navigation pointers and one bounded %LABEL_ADVISOR% checkpoint are kept in this browser. The checkpoint contains only project/conversation IDs, coding-agent and response-style preferences, and topic IDs. Questions and answers are not saved. Clear site data to forget them. Project context, credentials, readiness and completion are not stored here. Each product owns its project files and current state.</p></details><details><summary>Local addresses</summary><p>Default ports: launcher 4191; %LABEL_BUILD% 4177; %LABEL_STUDIO% 4318; %LABEL_GROW% 4383. Port overrides are configured when starting the launcher, as described in its README. Start each product separately on its matching port.</p></details></section>
+          <section id="advisor" data-view="advisor" hidden aria-labelledby="advisor-title" class="panel"><h2 id="advisor-title">%LABEL_ADVISOR%</h2><p id="advisor-mode" class="state" role="status">Codex-backed expert selected</p><p class="advisor-intro">%LABEL_ADVISOR% uses your existing Codex account to explain current work and prepare %LABEL_BUILD% tasks. %LABEL_BUILD% owns implementation. Local help stays available when Codex cannot answer.</p><p id="advisor-context">Context: local workspace.</p><div id="advisor-host" data-integration-slot="advisor" data-state="CODEX_SELECTED">
+            <form id="advisor-form" class="setup-grid">
+              <label class="wide">Your question<textarea id="advisor-question" maxlength="2000" rows="3" required placeholder="Ask about setup, current work, or a next step. Keep credentials and private values out."></textarea></label>
+              <label>Product<select id="advisor-product"><option value="build">%LABEL_BUILD%</option><option value="studio">%LABEL_STUDIO%</option><option value="grow">%LABEL_GROW%</option></select></label>
+              <label>Project<select id="advisor-project"></select></label>
+              <button type="button" id="advisor-read-projects" class="tertiary">Read current projects</button>
+              <label class="advisor-runtime">%LABEL_ADVISOR% conversation<select id="advisor-runtime"><option value="codex" selected>Codex — existing account</option><option value="">Local help — deterministic fallback</option></select></label>
+              <div class="advisor-actions wide"><button type="submit" value="HELP" class="primary">Ask for help</button><button type="submit" value="PREPARE_CODING_PROMPT">Prepare coding-agent prompt</button></div>
+            </form><p id="advisor-selection-status" class="hint" role="status">Current state is read from the selected product for each question.</p><div id="advisor-result" aria-live="polite"></div>
+          </div><p>Product state and completion remain with %LABEL_BUILD%, %LABEL_STUDIO%, and %LABEL_GROW%.</p></section>
+        </main>
+        <footer><p>Local work, owned by you. Products keep their own state.</p><p id="copy-status" role="status" aria-live="polite"></p></footer>
+      </div>
+    </div>
+    <noscript><p>Enable JavaScript for setup and navigation. Direct local product addresses: http://127.0.0.1:4177, http://127.0.0.1:4318, http://127.0.0.1:4383.</p></noscript>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

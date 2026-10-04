@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.local/
+test-results/
+playwright-report/
+templates/react/node_modules/
+templates/react/dist/

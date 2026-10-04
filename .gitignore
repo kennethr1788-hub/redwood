@@ -1,0 +1,30 @@
+# Local operating-system and editor artifacts
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Local credentials and environment files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Local diagnostics
+*.log
+
+# Installed prerequisites and generated local work
+node_modules/
+dist/
+.launchforge/
+.local/
+.studio/
+.grow-data/
+.work/
+.tools/
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+tests/media-connectors/.tmp/

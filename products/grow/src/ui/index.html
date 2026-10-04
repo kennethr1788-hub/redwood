@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>%LABEL_UMBRELLA% %LABEL_GROW% — Turn your product into a campaign</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#view">Skip to workspace</a>
+  <div class="app">
+    <aside>
+      <a class="wordmark" href="/" aria-label="%LABEL_UMBRELLA% %LABEL_GROW% home"><span class="wordmark-family">%LABEL_UMBRELLA%</span><span class="wordmark-product">%LABEL_GROW%</span></a>
+      <button id="new-project" class="new-project" type="button">＋ New project</button>
+      <div class="eyebrow aside-label">Your workspace</div>
+      <nav id="projects" aria-label="Projects"></nav>
+      <div class="aside-footer"><span class="status-dot"></span> Local workspace<p>Your files. Your workflow.<br>No credits. No auto-publishing.</p></div>
+    </aside>
+    <main id="main">
+      <header class="topbar">
+        <div id="breadcrumb">Your next launch starts here</div>
+        <span class="local-tag">Local · export first</span>
+      </header>
+      <div id="notice" role="status" aria-live="polite"></div>
+      <div id="view" tabindex="-1"></div>
+    </main>
+  </div>
+  <dialog id="project-dialog">
+    <form id="create-form">
+      <button type="button" class="close" id="close-dialog" aria-label="Close">×</button>
+      <div class="eyebrow">Growth workspace</div>
+      <h2>Start with your business.</h2>
+      <p>Start with a growth plan or owned inputs. Optionally audit a site for evidence and source proposals. Nothing is published from here.</p>
+      <label class="check"><input name="planOnly" type="checkbox" checked> Start without an audit · use owned inputs or a growth plan</label>
+      <label>Start with<select name="entry"><option value="planner">Growth plan</option><option value="inputs">Owned facts, article and assets</option></select></label>
+      <label>Project name<input name="name" placeholder="e.g. Field Notes" maxlength="100"></label>
+      <label><span id="intake-url-label">Product URL · optional</span><input name="url" type="url" placeholder="https://your-product.com"></label>
+      <details>
+        <summary>Have the source or brand assets?</summary>
+        <label>Source checkout path <span>Optional · static index.html adapter</span><input name="sourceDir" placeholder="/absolute/path/to/your/project"></label>
+        <p>%LABEL_GROW% reads source to prepare proposals; Build or your coding tool implements them. Brand images can be added in Campaign.</p>
+        <div class="audit-intake" hidden>
+          <label class="check"><input name="renderDom" type="checkbox" disabled> Capture JavaScript-rendered content</label>
+          <label>Readiness selector <span>Optional · wait for your app’s ready element</span><input name="readinessSelector" maxlength="200" placeholder="html[data-ready=&quot;true&quot;]" disabled></label>
+        </div>
+      </details>
+      <div class="audit-intake" hidden>
+        <label class="check"><input name="trustedSite" type="checkbox" disabled> I own or trust this site and approve this bounded browser audit</label>
+        <p class="muted">Up to 3 routes, one worker, about 1–3 minutes. Browser auditing runs site scripts. Use known competition inputs; hostile-site isolation is not qualified.</p>
+      </div>
+      <button class="primary" type="submit">Create workspace <span aria-hidden="true">↗</span></button>
+    </form>
+  </dialog>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

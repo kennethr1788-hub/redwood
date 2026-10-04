@@ -1,0 +1,72 @@
+{
+  "provenance": {
+    "sourceCommit": "57736752739016dad2de72d7eed915a4ce271d11",
+    "sourcePath": "products/studio/tests/integration-r3/evidence/capture-evidence.json",
+    "sha256": "4cabc449365b5001ec1cd457425810161c1f60b7e17b8e0c83381b980e731db1",
+    "note": "Recorded synthetic demo, not newly captured. Observed clicks/scrolls copied exactly. Viewport values come from recorded before-action snapshots, assigned their action startedMs; snapshot timing is approximate. Move trace unavailable; no moves synthesized."
+  },
+  "sourceDurationMs": 7320,
+  "events": [
+    {
+      "type": "viewport",
+      "timeMs": 789,
+      "width": 1280,
+      "height": 800
+    },
+    {
+      "type": "viewport",
+      "timeMs": 1693,
+      "width": 1280,
+      "height": 800
+    },
+    {
+      "type": "click",
+      "timeMs": 2072,
+      "x": 882,
+      "y": 289
+    },
+    {
+      "type": "viewport",
+      "timeMs": 2807,
+      "width": 1280,
+      "height": 800
+    },
+    {
+      "type": "viewport",
+      "timeMs": 3274,
+      "width": 1280,
+      "height": 800
+    },
+    {
+      "type": "scroll",
+      "timeMs": 3286,
+      "x": 882,
+      "y": 289,
+      "deltaY": 550
+    },
+    {
+      "type": "viewport",
+      "timeMs": 3858,
+      "width": 1280,
+      "height": 800
+    },
+    {
+      "type": "viewport",
+      "timeMs": 4363,
+      "width": 1280,
+      "height": 800
+    },
+    {
+      "type": "click",
+      "timeMs": 4756,
+      "x": 170,
+      "y": 337
+    },
+    {
+      "type": "viewport",
+      "timeMs": 5243,
+      "width": 1280,
+      "height": 800
+    }
+  ]
+}

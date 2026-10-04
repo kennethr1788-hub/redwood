@@ -1,0 +1,477 @@
+{
+  "schemaVersion": 1,
+  "retrievedAt": "2026-10-03T23:13:06.965086+00:00",
+  "researchMethod": "Official public documents only. No accounts, paid APIs or ad libraries queried through authenticated access.",
+  "rules": [
+    {
+      "sourceId": "google-ai",
+      "vendor": "Google",
+      "title": "Optimizing for AI features",
+      "url": "https://developers.google.com/search/docs/fundamentals/ai-optimization-guide",
+      "retrievedAt": "2026-10-03T23:13:06.965086+00:00",
+      "type": "OFFICIAL_GUIDANCE",
+      "rule": "Foundational SEO still applies to AI search: make original useful content crawlable, maintain accurate business/product details and useful images/video. No special AI schema, AI text file or llms.txt is required; Google ignores llms.txt. Monitor Search Console including its documented generative AI performance reporting.",
+      "applicableChannels": [
+        "ORGANIC",
+        "AI_DISCOVERY"
+      ],
+      "confidence": "DIRECT_PUBLIC_SOURCE",
+      "limitations": "Snapshot of public documentation; no outcome guarantee.",
+      "access": "PUBLIC_BODY"
+    },
+    {
+      "sourceId": "google-helpful",
+      "vendor": "Google",
+      "title": "Creating helpful reliable people-first content",
+      "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+      "retrievedAt": "2026-10-03T23:13:06.965086+00:00",
+      "type": "OFFICIAL_GUIDANCE",
+      "rule": "Prioritize original information, firsthand expertise, clear sourcing and a satisfying answer for the intended audience.",
+      "applicableChannels": [
+        "ORGANIC"
+      ],
+      "confidence": "DIRECT_PUBLIC_SOURCE",
+      "limitations": "Snapshot of public documentation; no outcome guarantee.",
+      "access": "PUBLIC_BODY"
+    },
+    {
+      "sourceId": "google-appearance",
+      "vendor": "Google",
+      "title": "Search appearance",
+      "url": "https://developers.google.com/search/docs/appearance",
+      "retrievedAt": "2026-10-03T23:13:06.965086+00:00",
+      "type": "OFFICIAL_GUIDANCE",
+      "rule": "Review titles, snippets, images/video and supported structured data. Markup helps understanding and rich-result eligibility; it does not guarantee display.",
+      "applicableChannels": [
+        "ORGANIC"
+      ],
+      "confidence": "DIRECT_PUBLIC_SOURCE",
+      "limitations": "Snapshot of public documentation; no outcome guarantee.",
+      "access": "PUBLIC_BODY"
+    },
+    {
+      "sourceId": "google-local",
+      "vendor": "Google",
+      "title": "LocalBusiness structured data",
+      "url": "https://developers.google.com/search/docs/appearance/structured-data/local-business",
+      "retrievedAt": "2026-10-03T23:13:06.965086+00:00",
+      "type": "OFFICIAL_GUIDANCE",
+      "rule": "Use the relevant LocalBusiness type with factual location and business details; validate markup and inspect Search Console. Rich results are not guaranteed.",
+      "applicableChannels": [
+        "ORGANIC"
+      ],
+      "confidence": "DIRECT_PUBLIC_SOURCE",
+      "limitations": "Snapshot of public documentation; no outcome guarantee.",
+      "access": "PUBLIC_BODY"
+    },
+    {
+      "sourceId": "google-org",
+      "vendor": "Google",
+      "title": "Organization structured data",
+      "url": "https://developers.google.com/search/docs/appearance/structured-data/organization",
+      "retrievedAt": "2026-10-03T23:13:06.965086+00:00",
+      "type": "OFFICIAL_GUIDANCE",
+      "rule": "Use accurate organization identity, URL, contact and logo details, choosing the most specific applicable subtype. Include only applicable properties.",
+      "applicableChannels": [
+        "ORGANIC"
+      ],
+      "confidence": "DIRECT_PUBLIC_SOURCE",
+      "limitations": "Snapshot of public documentation; no outcome guarantee.",
+      "access": "PUBLIC_BODY"
+    },
+    {
+      "sourceId": "google-software",
+      "vendor": "Google",
+      "title": "SoftwareApplication structured data",
+      "url": "https://developers.google.com/search/docs/appearance/structured-data/software-app",
+      "retrievedAt": "2026-10-03T23:13:06.965086+00:00",
+      "type": "OFFICIAL_GUIDANCE",
+      "rule": "Software rich-result eligibility has required properties including name, offer price and rating or review. Never invent reviews; validate supported markup and inspect crawlability.",
+      "applicableChannels": [
+        "ORGANIC"
+      ],
+      "confidence": "DIRECT_PUBLIC_SOURCE",
+      "limitations": "Snapshot of public documentation; no outcome guarantee.",
+      "access": "PUBLIC_BODY"
+    },
+    {
+      "sourceId": "google-objective",
+      "vendor": "Google",
+      "title": "About campaign objectives",
+      "url": "https://support.google.com/google-ads/answer/7450050",
+      "retrievedAt": "2026-10-03T23:13:06.965086+00:00",
+      "type": "OFFICIAL_GUIDANCE",
+      "rule": "Choose the business objective first, then campaign type, budget, bidding, assets and targeting.",
+      "applicableChannels": [
+        "GOOGLE_ADS"
+      ],
+      "confidence": "DIRECT_PUBLIC_SOURCE",
+      "limitations": "Snapshot of public documentation; no outcome guarantee.",
+      "access": "PUBLIC_BODY"
+    },
+    {
+      "sourceId": "google-budget",
+      "vendor": "Google",
+      "title": "About budgets",
+      "url": "https://support.google.com/google-ads/answer/13630812",
+      "retrievedAt": "2026-10-03T23:13:06.965086+00:00",
+      "type": "OFFICIAL_GUIDANCE",
+      "rule": "Review actual spend and goal-aligned conversion performance before adjusting budget; check performance after changes.",
+      "applicableChannels": [
+        "GOOGLE_ADS"
+      ],
+      "confidence": "DIRECT_PUBLIC_SOURCE",
+      "limitations": "Snapshot of public documentation; no outcome guarantee.",
+      "access": "PUBLIC_BODY"
+    },
+    {
+      "sourceId": "google-bid",
+      "vendor": "Google",
+      "title": "Choose your bid and budget",
+      "url": "https://support.google.com/google-ads/answer/2375454",
+      "retrievedAt": "2026-10-03T23:13:06.965086+00:00",
+      "type": "OFFICIAL_GUIDANCE",
+      "rule": "Start small and review daily. An average daily budget is not a hard daily cap; Google describes overdelivery and monthly limits. Select bidding for the intended outcome.",
+      "applicableChannels": [
+        "GOOGLE_ADS"
+      ],
+      "confidence": "DIRECT_PUBLIC_SOURCE",
+      "limitations": "Local day-by-day ledger is a planning envelope, not a Google billing limit or campaign setting.",
+      "access": "PUBLIC_BODY"
+    },
+    {
+      "sourceId": "google-tips",
+      "vendor": "Google",
+      "title": "12 tips to advertising with Google Ads",
+      "url": "https://support.google.com/google-ads/answer/10560629",
+      "retrievedAt": "2026-10-03T23:13:06.965086+00:00",
+      "type": "OFFICIAL_GUIDANCE",
+      "rule": "Align targeting and formats with the goal, consolidate where appropriate, and allocate based on actual performance.",
+      "applicableChannels": [
+        "GOOGLE_ADS"
+      ],
+      "confidence": "DIRECT_PUBLIC_SOURCE",
+      "limitations": "Snapshot of public documentation; no outcome guarantee.",
+      "access": "PUBLIC_BODY"
+    },
+    {
+      "sourceId": "google-conversions",
+      "vendor": "Google",
+      "title": "8 steps to prepare your campaign",
+      "url": "https://support.google.com/google-ads/answer/10498850",
+      "retrievedAt": "2026-10-03T23:13:06.965086+00:00",
+      "type": "OFFICIAL_GUIDANCE",
+      "rule": "Define and validate desired conversion actions before judging effectiveness; conversion tracking is required for some campaign types.",
+      "applicableChannels": [
+        "GOOGLE_ADS"
+      ],
+      "confidence": "DIRECT_PUBLIC_SOURCE",
+      "limitations": "Snapshot of public documentation; no outcome guarantee.",
+      "access": "PUBLIC_BODY"
+    },
+    {
+      "sourceId": "openai-bots",
+      "vendor": "OpenAI",
+      "title": "Overview of OpenAI crawlers",
+      "url": "https://developers.openai.com/api/docs/bots",
+      "retrievedAt": "2026-10-03T23:13:06.965086+00:00",
+      "type": "OFFICIAL_GUIDANCE",
+      "rule": "OAI-SearchBot serves search discovery, GPTBot governs potential training, and OAI-AdsBot validates submitted ad destinations. These controls are distinct.",
+      "applicableChannels": [
+        "AI_DISCOVERY",
+        "CHATGPT_ADS"
+      ],
+      "confidence": "DIRECT_PUBLIC_SOURCE",
+      "limitations": "Snapshot of public documentation; no outcome guarantee.",
+      "access": "PUBLIC_BODY"
+    },
+    {
+      "sourceId": "openai-publishers",
+      "vendor": "OpenAI",
+      "title": "Publishers and Developers FAQ",
+      "url": "https://help.openai.com/en/articles/12627856-publishers-and-developers-faq",
+      "retrievedAt": "2026-10-03T23:13:06.965086+00:00",
+      "type": "OFFICIAL_GUIDANCE",
+      "rule": "Allow OAI-SearchBot if search summaries are desired; referral analytics can observe utm_source=chatgpt.com. Access is not a promise of citation or inclusion.",
+      "applicableChannels": [
+        "AI_DISCOVERY"
+      ],
+      "confidence": "DIRECT_PUBLIC_SOURCE",
+      "limitations": "Snapshot of public documentation; no outcome guarantee.",
+      "access": "PUBLIC_BODY"
+    },
+    {
+      "sourceId": "openai-adsbot",
+      "vendor": "OpenAI",
+      "title": "Advertiser crawler guidance",
+      "url": "https://help.openai.com/en/articles/20001243-advertiser-guidance-for-allowing-openai-web-crawlers",
+      "retrievedAt": "2026-10-03T23:13:06.965086+00:00",
+      "type": "OFFICIAL_GUIDANCE",
+      "rule": "Ad destinations need OAI-AdsBot access. Review robots, HTTP reachability, authentication, WAF/CDN challenges and rate limits with the site owner. OAI-SearchBot is recommended.",
+      "applicableChannels": [
+        "CHATGPT_ADS"
+      ],
+      "confidence": "DIRECT_PUBLIC_SOURCE",
+      "limitations": "Snapshot of public documentation; no outcome guarantee.",
+      "access": "PUBLIC_BODY"
+    },
+    {
+      "sourceId": "openai-copy",
+      "vendor": "OpenAI",
+      "title": "Create Ads for ChatGPT Ads",
+      "url": "https://help.openai.com/en/articles/20001212-create-ads-for-chatgpt-ads",
+      "retrievedAt": "2026-10-03T23:13:06.965086+00:00",
+      "type": "OFFICIAL_GUIDANCE",
+      "rule": "Use accurate specific benefits, distinct message angles, relevant reachable destinations, coherent visuals and UTM parameters.",
+      "applicableChannels": [
+        "CHATGPT_ADS"
+      ],
+      "confidence": "DIRECT_PUBLIC_SOURCE",
+      "limitations": "Snapshot of public documentation; no outcome guarantee.",
+      "access": "PUBLIC_BODY"
+    },
+    {
+      "sourceId": "openai-availability",
+      "vendor": "OpenAI",
+      "title": "ChatGPT Ads help collection",
+      "url": "https://help.openai.com/en/collections/20001223-chatgpt-ads",
+      "retrievedAt": "2026-10-03T23:13:06.965086+00:00",
+      "type": "AVAILABILITY_BOUNDARY",
+      "rule": "ChatGPT Ads has account, country and beta availability documentation. Verify current eligibility before considering allocation.",
+      "applicableChannels": [
+        "CHATGPT_ADS"
+      ],
+      "confidence": "DIRECT_PUBLIC_SOURCE",
+      "limitations": "Collection read; no account or country eligibility was checked. Availability is user-supplied, never inferred.",
+      "access": "PUBLIC_BODY"
+    },
+    {
+      "sourceId": "claude-bots",
+      "vendor": "Anthropic",
+      "title": "Crawler controls",
+      "url": "https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler",
+      "retrievedAt": "2026-10-03T23:13:06.965086+00:00",
+      "type": "OFFICIAL_GUIDANCE",
+      "rule": "ClaudeBot collects potential training data; Claude-User retrieves on user request; Claude-SearchBot supports search. Robots controls affect the relevant access separately.",
+      "applicableChannels": [
+        "AI_DISCOVERY"
+      ],
+      "confidence": "DIRECT_PUBLIC_SOURCE",
+      "limitations": "Snapshot of public documentation; no outcome guarantee.",
+      "access": "PUBLIC_BODY"
+    },
+    {
+      "sourceId": "claude-search",
+      "vendor": "Anthropic",
+      "title": "Enable and use web search",
+      "url": "https://support.claude.com/en/articles/10684626-enable-and-use-web-search",
+      "retrievedAt": "2026-10-03T23:13:06.965086+00:00",
+      "type": "PLATFORM_FACT",
+      "rule": "Claude web search grounds answers in web content and citations. Verify important facts against authoritative sources; this is not publisher ranking guidance.",
+      "applicableChannels": [
+        "AI_DISCOVERY"
+      ],
+      "confidence": "DIRECT_PUBLIC_SOURCE",
+      "limitations": "Snapshot of public documentation; no outcome guarantee.",
+      "access": "PUBLIC_BODY"
+    },
+    {
+      "sourceId": "claude-removal",
+      "vendor": "Anthropic",
+      "title": "Report block and remove content",
+      "url": "https://support.claude.com/en/articles/10684638-report-block-and-remove-content-from-claude",
+      "retrievedAt": "2026-10-03T23:13:06.965086+00:00",
+      "type": "PLATFORM_FACT",
+      "rule": "Search partner noindex controls and crawler restrictions have distinct effects on search outputs and direct access. No discovery guarantee follows from allowance.",
+      "applicableChannels": [
+        "AI_DISCOVERY"
+      ],
+      "confidence": "DIRECT_PUBLIC_SOURCE",
+      "limitations": "Snapshot of public documentation; no outcome guarantee.",
+      "access": "PUBLIC_BODY"
+    },
+    {
+      "sourceId": "xai-search",
+      "vendor": "xAI",
+      "title": "Web Search",
+      "url": "https://docs.x.ai/developers/tools/web-search",
+      "retrievedAt": "2026-10-03T23:13:06.965086+00:00",
+      "type": "PLATFORM_FACT",
+      "rule": "The developer tool can search and browse the web with allowed or excluded domains. API domain filters are caller controls, not webmaster ranking signals.",
+      "applicableChannels": [
+        "AI_DISCOVERY"
+      ],
+      "confidence": "DIRECT_PUBLIC_SOURCE",
+      "limitations": "Snapshot of public documentation; no outcome guarantee.",
+      "access": "PUBLIC_BODY"
+    },
+    {
+      "sourceId": "xai-citations",
+      "vendor": "xAI",
+      "title": "Citations",
+      "url": "https://docs.x.ai/developers/tools/citations",
+      "retrievedAt": "2026-10-03T23:13:06.965086+00:00",
+      "type": "PLATFORM_FACT",
+      "rule": "API responses expose encountered source URLs and optional inline citations; inline citations are not promised on every answer.",
+      "applicableChannels": [
+        "AI_DISCOVERY"
+      ],
+      "confidence": "DIRECT_PUBLIC_SOURCE",
+      "limitations": "Snapshot of public documentation; no outcome guarantee.",
+      "access": "PUBLIC_BODY"
+    },
+    {
+      "sourceId": "xai-boundary",
+      "vendor": "xAI",
+      "title": "Tools Overview",
+      "url": "https://docs.x.ai/developers/tools/overview",
+      "retrievedAt": "2026-10-03T23:13:06.965086+00:00",
+      "type": "AVAILABILITY_BOUNDARY",
+      "rule": "NO_OFFICIAL_XAI_WEBMASTER_OPTIMIZATION_RULE_IDENTIFIED. The reviewed tool docs and bounded official-domain search establish search/browse capabilities, not a crawler identity or ranking recipe.",
+      "applicableChannels": [
+        "AI_DISCOVERY"
+      ],
+      "confidence": "DIRECT_PUBLIC_SOURCE",
+      "limitations": "Bounded search of docs.x.ai and x.ai, not proof that no guidance exists anywhere. No Grok score or invented user-agent.",
+      "access": "PUBLIC_BODY"
+    },
+    {
+      "sourceId": "meta-reels",
+      "vendor": "Meta",
+      "title": "Instagram and Facebook Reels ads",
+      "url": "https://www.facebook.com/business/ads/facebook-instagram-reels-ads",
+      "retrievedAt": "2026-10-03T23:13:06.965086+00:00",
+      "type": "OFFICIAL_GUIDANCE",
+      "rule": "Consider Advantage+ placements where appropriate; manual setups are advised to use six or more placements. Customize creative for native 9:16 Reels, audio and safe zones; use A/B tests to learn.",
+      "applicableChannels": [
+        "META"
+      ],
+      "confidence": "OFFICIAL_INDEXED_BODY",
+      "limitations": "Direct open redirected to login (UNAVAILABLE_PUBLICLY). Official indexed full body was available and read; crawl freshness is older than retrieval. Recheck live account specs before publication. Case-study percentages are not forecasts.",
+      "access": "INDEXED_BODY_ONLY"
+    },
+    {
+      "sourceId": "meta-objective",
+      "vendor": "Meta",
+      "title": "Selecting campaign objectives and conversion settings",
+      "url": "https://www.facebookblueprint.com/student/path/253165-selecting-objectives-course",
+      "retrievedAt": "2026-10-03T23:13:06.965086+00:00",
+      "type": "OFFICIAL_GUIDANCE",
+      "rule": "Match objectives, conversion locations, events and performance goals to the business goal.",
+      "applicableChannels": [
+        "META"
+      ],
+      "confidence": "DIRECT_PUBLIC_SOURCE",
+      "limitations": "Public course description read; login lesson bodies not read.",
+      "access": "PUBLIC_BODY"
+    },
+    {
+      "sourceId": "meta-budget",
+      "vendor": "Meta",
+      "title": "Choose placements budget and schedule",
+      "url": "https://www.facebookblueprint.com/student/path/211542-ads-manager-budgeting-course",
+      "retrievedAt": "2026-10-03T23:13:06.965086+00:00",
+      "type": "OFFICIAL_GUIDANCE",
+      "rule": "Plan placements, budget and schedule in Ads Manager.",
+      "applicableChannels": [
+        "META"
+      ],
+      "confidence": "DIRECT_PUBLIC_SOURCE",
+      "limitations": "Public course overview only; campaign versus ad-set budget mechanics behind lessons were not verified. R5 single campaign allocation is a heuristic.",
+      "access": "PUBLIC_BODY"
+    },
+    {
+      "sourceId": "meta-measure",
+      "vendor": "Meta",
+      "title": "Meta Ads Manager learning",
+      "url": "https://www.facebookblueprint.com/student/collection/507792-meta-ads-manager-learning",
+      "retrievedAt": "2026-10-03T23:13:06.965086+00:00",
+      "type": "OFFICIAL_GUIDANCE",
+      "rule": "Use goal-aligned metrics to analyze campaign results and review placement and creative options.",
+      "applicableChannels": [
+        "META"
+      ],
+      "confidence": "DIRECT_PUBLIC_SOURCE",
+      "limitations": "Public learning catalog only; detailed lesson bodies unavailable.",
+      "access": "PUBLIC_BODY"
+    },
+    {
+      "sourceId": "meta-categories",
+      "vendor": "Meta",
+      "title": "Ad Library API category enumeration",
+      "url": "https://es-la.facebook.com/ads/library/api",
+      "retrievedAt": "2026-10-03T23:13:06.965086+00:00",
+      "type": "PLATFORM_FACT",
+      "rule": "Official category enumeration distinguishes housing, employment, financial products/services and political/social-issue ads.",
+      "applicableChannels": [
+        "META"
+      ],
+      "confidence": "OFFICIAL_INDEXED_BODY",
+      "limitations": "Official indexed API documentation; not a complete legal eligibility or regional advertising policy assessment.",
+      "access": "INDEXED_BODY_ONLY"
+    },
+    {
+      "sourceId": "meta-library",
+      "vendor": "Meta",
+      "title": "Ad Library",
+      "url": "https://www.facebook.com/ads/library/",
+      "retrievedAt": "2026-10-03T23:13:06.965086+00:00",
+      "type": "AVAILABILITY_BOUNDARY",
+      "rule": "UNAVAILABLE_PUBLICLY. No recommendation inferred from inaccessible body.",
+      "applicableChannels": [
+        "META"
+      ],
+      "confidence": "UNAVAILABLE",
+      "limitations": "403 or login redirect during public retrieval; no login performed.",
+      "access": "UNAVAILABLE_PUBLICLY"
+    },
+    {
+      "sourceId": "meta-help-category",
+      "vendor": "Meta",
+      "title": "Meta help page 1604287853035214",
+      "url": "https://www.facebook.com/business/help/1604287853035214",
+      "retrievedAt": "2026-10-03T23:13:06.965086+00:00",
+      "type": "AVAILABILITY_BOUNDARY",
+      "rule": "UNAVAILABLE_PUBLICLY. No recommendation inferred from inaccessible body.",
+      "applicableChannels": [
+        "META"
+      ],
+      "confidence": "UNAVAILABLE",
+      "limitations": "Discovered during category/budget research; direct body and title could not be verified because of login redirect. No login performed or recommendation inferred.",
+      "access": "UNAVAILABLE_PUBLICLY"
+    },
+    {
+      "sourceId": "meta-help-budget",
+      "vendor": "Meta",
+      "title": "Meta help page 359540174625519",
+      "url": "https://www.facebook.com/business/help/359540174625519",
+      "retrievedAt": "2026-10-03T23:13:06.965086+00:00",
+      "type": "AVAILABILITY_BOUNDARY",
+      "rule": "UNAVAILABLE_PUBLICLY. No recommendation inferred from inaccessible body.",
+      "applicableChannels": [
+        "META"
+      ],
+      "confidence": "UNAVAILABLE",
+      "limitations": "Discovered during category/budget research; direct body and title could not be verified because of login redirect. No login performed or recommendation inferred.",
+      "access": "UNAVAILABLE_PUBLICLY"
+    },
+    {
+      "sourceId": "lf-allocation",
+      "vendor": "LaunchForge",
+      "title": "R5 bounded allocation policy",
+      "url": "products/grow/research/growth-planner-r5/RESEARCH.md",
+      "retrievedAt": "2026-10-03T23:13:06.965086+00:00",
+      "type": "LAUNCHFORGE_HEURISTIC",
+      "rule": "Keep one paid channel and one objective. Hold 10% in reserve. Under $500 or $20/day avoid a separate retargeting slice; above both, allocate 10% only with user-reported usable audience and explicit retargeting request. Flag under $10/day as thin. Three angles, days 1/mid/end checks; no separate testing campaign.",
+      "applicableChannels": [
+        "META",
+        "GOOGLE_ADS",
+        "CHATGPT_ADS",
+        "ORGANIC"
+      ],
+      "confidence": "EXPLICIT_PRODUCT_POLICY",
+      "limitations": "Conservative product choices, not platform minimums, optimized allocation, statistical power or predicted results.",
+      "access": "LOCAL_POLICY"
+    }
+  ]
+}

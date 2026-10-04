@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <meta charset="utf-8" /><title>Reviewed Orbit flow</title>
+  <style>
+    body {
+      margin: 0;
+      background: #101827;
+      color: #fff;
+      font: 22px system-ui;
+      min-height: 2300px;
+    }
+    main {
+      padding: 80px;
+    }
+    button,
+    input,
+    a {
+      font: inherit;
+      padding: 16px;
+      margin: 20px;
+      color: #101827;
+      background: #b8efda;
+      border: 0;
+      border-radius: 8px;
+    }
+    #marker {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 40px;
+      height: 40px;
+      background: rgb(220, 0, 0);
+      z-index: 10;
+    }
+    #launch {
+      position: absolute;
+      left: 100px;
+      top: 240px;
+    }
+    #done {
+      position: absolute;
+      left: 100px;
+      top: 360px;
+    }
+    #bottom {
+      position: absolute;
+      top: 1600px;
+    }
+    #late {
+      margin-top: 70px;
+    }
+  </style>
+  <div id="marker"></div>
+  <main>
+    <h1>Orbit — reviewed app demonstration</h1>
+    <label>Campaign <input id="campaign" aria-label="Campaign" /></label>
+    <button id="launch">Prepare campaign</button>
+    <div id="done" hidden>Campaign ready</div>
+    <button id="disabled" disabled>Unavailable</button
+    ><button id="scripted">Script only</button>
+    <a id="next" href="/next">Next screen</a>
+    <div id="bottom">Campaign details below the fold</div>
+  </main>
+  <script>
+    const report = (event) =>
+      fetch("/observed", {
+        method: "POST",
+        body: JSON.stringify({
+          type: event.type,
+          id: event.target.id,
+          x: event.clientX,
+          y: event.clientY,
+          trusted: event.isTrusted,
+          url: location.href,
+        }),
+      });
+    document.addEventListener("click", report, true);
+    // This synthetic click must never appear as captured user input.
+    document.querySelector("#scripted").click();
+    const launch = document.querySelector("#launch");
+    launch.addEventListener(
+      "pointerenter",
+      () => {
+        launch.style.left = "760px";
+      },
+      { once: true },
+    );
+    launch.addEventListener("click", () => {
+      document.querySelector("#marker").style.background = "rgb(0,220,0)";
+      document.querySelector("#done").hidden = false;
+      history.pushState({}, "", "/prepared");
+    });
+    if (location.pathname === "/next") {
+      document.querySelector("h1").textContent = "Orbit — next screen";
+      const b = document.createElement("button");
+      b.id = "next-action";
+      b.textContent = "Next action";
+      document.querySelector("main").append(b);
+    }
+  </script>
+</html>

@@ -1,0 +1,22 @@
+{
+  "pages": [
+    {
+      "url": "https://example.test/",
+      "title": "Field Notes",
+      "description": "A notebook for shared project notes.",
+      "links": [
+        "/guide#start"
+      ]
+    },
+    {
+      "url": "https://example.test/guide",
+      "title": "Guide",
+      "text": "Export a notebook as Markdown."
+    },
+    {
+      "url": "https://example.test/examples",
+      "title": "Examples",
+      "text": "Group notes by project."
+    }
+  ]
+}

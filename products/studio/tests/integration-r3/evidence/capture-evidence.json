@@ -1,0 +1,442 @@
+{
+  "media": {
+    "width": 1280,
+    "height": 800,
+    "durationMs": 7320,
+    "hasAudio": false
+  },
+  "firstGreen": 2040,
+  "clickTimeMs": 2072,
+  "alignmentErrorMs": -32,
+  "timing": {
+    "schemaVersion": 2,
+    "epoch": "new-page-return",
+    "pageCreationMs": 109,
+    "contentStartMs": 727,
+    "actions": [
+      {
+        "step": 1,
+        "type": "fill",
+        "label": "Name campaign",
+        "status": "completed",
+        "startedMs": 789,
+        "before": {
+          "url": "http://127.0.0.1:64761/",
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "viewport": {
+            "width": 1280,
+            "height": 800,
+            "deviceScaleFactor": 1
+          },
+          "focus": {
+            "tag": "body",
+            "id": ""
+          }
+        },
+        "selector": "#campaign",
+        "targetBox": {
+          "x": 202.453125,
+          "y": 210.9375,
+          "width": 262,
+          "height": 58
+        },
+        "dispatchedMs": 1213,
+        "after": {
+          "url": "http://127.0.0.1:64761/",
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "viewport": {
+            "width": 1280,
+            "height": 800,
+            "deviceScaleFactor": 1
+          },
+          "focus": {
+            "tag": "input",
+            "id": "campaign"
+          }
+        },
+        "endedMs": 1693
+      },
+      {
+        "step": 2,
+        "type": "click",
+        "label": "Prepare campaign",
+        "status": "completed",
+        "startedMs": 1693,
+        "before": {
+          "url": "http://127.0.0.1:64761/",
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "viewport": {
+            "width": 1280,
+            "height": 800,
+            "deviceScaleFactor": 1
+          },
+          "focus": {
+            "tag": "input",
+            "id": "campaign"
+          }
+        },
+        "selector": "#launch",
+        "targetBox": {
+          "x": 120,
+          "y": 260,
+          "width": 204.421875,
+          "height": 58
+        },
+        "dispatchedMs": 2082,
+        "after": {
+          "url": "http://127.0.0.1:64761/prepared",
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "viewport": {
+            "width": 1280,
+            "height": 800,
+            "deviceScaleFactor": 1
+          },
+          "focus": {
+            "tag": "button",
+            "id": "launch"
+          }
+        },
+        "endedMs": 2807,
+        "inputTimeMs": 2072
+      },
+      {
+        "step": 3,
+        "type": "assert-visible",
+        "label": "Review success",
+        "status": "completed",
+        "startedMs": 2807,
+        "before": {
+          "url": "http://127.0.0.1:64761/prepared",
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "viewport": {
+            "width": 1280,
+            "height": 800,
+            "deviceScaleFactor": 1
+          },
+          "focus": {
+            "tag": "button",
+            "id": "launch"
+          }
+        },
+        "selector": "#done",
+        "targetBox": {
+          "x": 100,
+          "y": 360,
+          "width": 155.8125,
+          "height": 26
+        },
+        "dispatchedMs": 2813,
+        "after": {
+          "url": "http://127.0.0.1:64761/prepared",
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "viewport": {
+            "width": 1280,
+            "height": 800,
+            "deviceScaleFactor": 1
+          },
+          "focus": {
+            "tag": "button",
+            "id": "launch"
+          }
+        },
+        "endedMs": 3274
+      },
+      {
+        "step": 4,
+        "type": "scroll",
+        "label": "Show details",
+        "status": "completed",
+        "startedMs": 3274,
+        "before": {
+          "url": "http://127.0.0.1:64761/prepared",
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "viewport": {
+            "width": 1280,
+            "height": 800,
+            "deviceScaleFactor": 1
+          },
+          "focus": {
+            "tag": "button",
+            "id": "launch"
+          }
+        },
+        "dispatchedMs": 3278,
+        "after": {
+          "url": "http://127.0.0.1:64761/prepared",
+          "scroll": {
+            "x": 0,
+            "y": 550
+          },
+          "viewport": {
+            "width": 1280,
+            "height": 800,
+            "deviceScaleFactor": 1
+          },
+          "focus": {
+            "tag": "button",
+            "id": "launch"
+          }
+        },
+        "endedMs": 3858,
+        "inputTimeMs": 3286
+      },
+      {
+        "step": 5,
+        "type": "navigate",
+        "label": "Open next screen",
+        "status": "completed",
+        "startedMs": 3858,
+        "before": {
+          "url": "http://127.0.0.1:64761/prepared",
+          "scroll": {
+            "x": 0,
+            "y": 550
+          },
+          "viewport": {
+            "width": 1280,
+            "height": 800,
+            "deviceScaleFactor": 1
+          },
+          "focus": {
+            "tag": "button",
+            "id": "launch"
+          }
+        },
+        "dispatchedMs": 3872,
+        "after": {
+          "url": "http://127.0.0.1:64761/next",
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "viewport": {
+            "width": 1280,
+            "height": 800,
+            "deviceScaleFactor": 1
+          },
+          "focus": {
+            "tag": "body",
+            "id": ""
+          }
+        },
+        "endedMs": 4363
+      },
+      {
+        "step": 6,
+        "type": "click",
+        "label": "Confirm next screen",
+        "status": "completed",
+        "startedMs": 4363,
+        "before": {
+          "url": "http://127.0.0.1:64761/next",
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "viewport": {
+            "width": 1280,
+            "height": 800,
+            "deviceScaleFactor": 1
+          },
+          "focus": {
+            "tag": "body",
+            "id": ""
+          }
+        },
+        "selector": "#next-action",
+        "targetBox": {
+          "x": 100,
+          "y": 308.9375,
+          "width": 140.046875,
+          "height": 58
+        },
+        "dispatchedMs": 4758,
+        "after": {
+          "url": "http://127.0.0.1:64761/next",
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "viewport": {
+            "width": 1280,
+            "height": 800,
+            "deviceScaleFactor": 1
+          },
+          "focus": {
+            "tag": "button",
+            "id": "next-action"
+          }
+        },
+        "endedMs": 5243,
+        "inputTimeMs": 4756
+      },
+      {
+        "step": 7,
+        "type": "navigate",
+        "label": "Same-document route",
+        "status": "completed",
+        "startedMs": 5243,
+        "before": {
+          "url": "http://127.0.0.1:64761/next",
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "viewport": {
+            "width": 1280,
+            "height": 800,
+            "deviceScaleFactor": 1
+          },
+          "focus": {
+            "tag": "button",
+            "id": "next-action"
+          }
+        },
+        "dispatchedMs": 5248,
+        "after": {
+          "url": "http://127.0.0.1:64761/next#details",
+          "scroll": {
+            "x": 0,
+            "y": 0
+          },
+          "viewport": {
+            "width": 1280,
+            "height": 800,
+            "deviceScaleFactor": 1
+          },
+          "focus": {
+            "tag": "button",
+            "id": "next-action"
+          }
+        },
+        "endedMs": 5724
+      }
+    ],
+    "observations": [
+      {
+        "step": 2,
+        "type": "click",
+        "timeMs": 2072,
+        "x": 882,
+        "y": 289,
+        "target": {
+          "tag": "button",
+          "id": "launch",
+          "role": null,
+          "box": {
+            "x": 780,
+            "y": 260,
+            "width": 204.421875,
+            "height": 58
+          }
+        },
+        "url": "http://127.0.0.1:64761/",
+        "scroll": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "step": 4,
+        "type": "scroll",
+        "timeMs": 3286,
+        "x": 882,
+        "y": 289,
+        "deltaY": 550,
+        "target": {
+          "tag": "body",
+          "id": "",
+          "role": null,
+          "box": {
+            "x": 0,
+            "y": -550,
+            "width": 1280,
+            "height": 2300
+          }
+        },
+        "url": "http://127.0.0.1:64761/prepared",
+        "scroll": {
+          "x": 0,
+          "y": 550
+        }
+      },
+      {
+        "step": 6,
+        "type": "click",
+        "timeMs": 4756,
+        "x": 170,
+        "y": 337,
+        "target": {
+          "tag": "button",
+          "id": "next-action",
+          "role": null,
+          "box": {
+            "x": 100,
+            "y": 308.9375,
+            "width": 140.046875,
+            "height": 58
+          }
+        },
+        "url": "http://127.0.0.1:64761/next",
+        "scroll": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    ],
+    "routes": [
+      {
+        "timeMs": 17,
+        "step": null,
+        "url": "http://127.0.0.1:64761/"
+      },
+      {
+        "timeMs": 2081,
+        "step": 2,
+        "url": "http://127.0.0.1:64761/prepared"
+      },
+      {
+        "timeMs": 3870,
+        "step": 5,
+        "url": "http://127.0.0.1:64761/next"
+      },
+      {
+        "timeMs": 5248,
+        "step": 7,
+        "url": "http://127.0.0.1:64761/next#details"
+      }
+    ],
+    "limits": {
+      "steps": 12,
+      "waitMs": 30000,
+      "actionMs": 5000,
+      "captureMs": 60000,
+      "events": 2000
+    },
+    "alignment": "source timeMs; output time = timeMs - timeline.trim.startMs; video epoch remains approximate",
+    "inputClockUncertaintyMs": 2,
+    "status": "completed"
+  },
+  "projectId": "e9457e84-5909-432a-9ef8-ee406d14636c"
+}

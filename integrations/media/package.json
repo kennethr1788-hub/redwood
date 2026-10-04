@@ -1,0 +1,12 @@
+{
+  "name": "@launchforge/media-leaf",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "dependencies": {
+    "@elevenlabs/elevenlabs-js": "2.70.0"
+  }
+}

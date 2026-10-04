@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "files": [
+    {
+      "commit": "37b19b5cc02cdf266add19709172349d0733af56",
+      "path": "tests/agent-bridge/adapters.test.mjs",
+      "destination": "legacy-leaves/tests/agent-bridge/adapters.test.mjs",
+      "bytes": 9269,
+      "sha256": "2e77c1fe22e6d9bc3d5079448c61a2e9aedacc567726b3581556ea67cc79bc28",
+      "blob": "6adf84719e0648a546635aea9e2fd17b5f684e7b"
+    },
+    {
+      "commit": "37b19b5cc02cdf266add19709172349d0733af56",
+      "path": "tests/agent-bridge/argv-recorder.mjs",
+      "destination": "legacy-leaves/tests/agent-bridge/argv-recorder.mjs",
+      "bytes": 172,
+      "sha256": "20ba4e49ded4cb2ed98c4e8f16a9733bad4d8ff2b6db578f283e6d6feb562ded",
+      "blob": "690bf5f929d5bee523559b95ad9c7a2525ca143d"
+    },
+    {
+      "commit": "37b19b5cc02cdf266add19709172349d0733af56",
+      "path": "tests/agent-bridge/argv.test.mjs",
+      "destination": "legacy-leaves/tests/agent-bridge/argv.test.mjs",
+      "bytes": 1469,
+      "sha256": "eef4626dc9cd3f9327e1acb92fa707ae18f72a3f0fe5af8dcf46208906ca1c1b",
+      "blob": "e670b5e7c64a4f36285bb83d6147e4c806646091"
+    },
+    {
+      "commit": "37b19b5cc02cdf266add19709172349d0733af56",
+      "path": "tests/agent-bridge/contract.test.mjs",
+      "destination": "legacy-leaves/tests/agent-bridge/contract.test.mjs",
+      "bytes": 6085,
+      "sha256": "3065affff990c5f01c1e0d223e230ca68ef2e4b3679752274efa589014f0597c",
+      "blob": "2bded19f1f7ff10b7f0285d3e981dfac77d39d0c"
+    },
+    {
+      "commit": "37b19b5cc02cdf266add19709172349d0733af56",
+      "path": "tests/agent-bridge/fixtures.mjs",
+      "destination": "legacy-leaves/tests/agent-bridge/fixtures.mjs",
+      "bytes": 1683,
+      "sha256": "70845276254152e21e7b929f60e3991a7df8fb554eef47e552d385c955b42edb",
+      "blob": "399f1e8a4ec272735c1e52bcfc34efa3b9a84beb"
+    },
+    {
+      "commit": "37b19b5cc02cdf266add19709172349d0733af56",
+      "path": "tests/agent-bridge/local-paths.test.mjs",
+      "destination": "legacy-leaves/tests/agent-bridge/local-paths.test.mjs",
+      "bytes": 2828,
+      "sha256": "c05c1d9607eb0cfabd546c30035c70f7eb8d8e17acd7dcf983a9b8889844e5d3",
+      "blob": "5cd31fb39b24ee73d38d087235a8dce9e924eb86"
+    },
+    {
+      "commit": "37b19b5cc02cdf266add19709172349d0733af56",
+      "path": "tests/agent-bridge/receipt.test.mjs",
+      "destination": "legacy-leaves/tests/agent-bridge/receipt.test.mjs",
+      "bytes": 3482,
+      "sha256": "c3940b76bfeff37e47d4873c61dbb560ef2bb6defe65e86444ae82a54e7c6dbe",
+      "blob": "96cbd34064a824619e13eced6757396e3c4184da"
+    },
+    {
+      "commit": "bce14cd9e6f77dc39354b67611b13b96840e1d76",
+      "path": "tests/onboarding-resume/fixtures.mjs",
+      "destination": "legacy-leaves/tests/onboarding-resume/fixtures.mjs",
+      "bytes": 3144,
+      "sha256": "81507b1c2ec4a86cc2d825236ad98cf463e362ca37ebf83eba250303b40717c1",
+      "blob": "7a752c214e63631c0c4bb972c6d41b7de1c224d6"
+    },
+    {
+      "commit": "bce14cd9e6f77dc39354b67611b13b96840e1d76",
+      "path": "tests/onboarding-resume/resume.test.mjs",
+      "destination": "legacy-leaves/tests/onboarding-resume/resume.test.mjs",
+      "bytes": 21834,
+      "sha256": "01f105c9aa74a32fbefe6717ae3453efb7ee3b076c50458a3928f9e529ee731e",
+      "blob": "d2a3ed2be5cf8ef755064028be4c71e95b619a0d"
+    },
+    {
+      "commit": "c3188d1c78e90543776e03ceaa8c2534481c2bfb",
+      "path": "tests/connector-registry/registry.test.mjs",
+      "destination": "legacy-leaves/tests/connector-registry/registry.test.mjs",
+      "bytes": 18448,
+      "sha256": "b78a5900f7016cea448ae2c71a4a8d6ea1db15ada3f71128807ea2485caf2c93",
+      "blob": "38e97eac2b0c17ff10cecabd3656f3cdadd151c0"
+    },
+    {
+      "commit": "bce14cd9e6f77dc39354b67611b13b96840e1d76",
+      "path": "tests/onboarding-resume/evidence/examples/buildCurrent/resume.md",
+      "destination": "legacy-resume/buildCurrent.md",
+      "bytes": 3816,
+      "sha256": "7c54fe16f74b416ee4f645fc3d61d62f2f4074c95d4389e6f1523f3f80a034a7",
+      "blob": "7dbc9d6f7d0d4f79fcb6ed7c55eb590c855b1e45"
+    }
+  ],
+  "scope": "PUBLIC_DISTRIBUTION: runtime regression inputs only; internal connector provenance excluded"
+}

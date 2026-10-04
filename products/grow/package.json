@@ -1,0 +1,36 @@
+{
+  "name": "@launchforge/grow",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test tests/*.test.js",
+    "test:e2e": "node tests/e2e.js",
+    "check": "node scripts/check.js",
+    "demo": "node scripts/demo.js",
+    "typecheck": "tsc --noEmit --strict --skipLibCheck --module nodenext --target es2022 src/content/schema.ts tests/schema-types.ts",
+    "test:planner": "node --test tests/growth-planner.test.js",
+    "test:planner:e2e": "node tests/growth-planner-browser.js"
+  },
+  "dependencies": {
+    "@fontsource/dm-sans": "5.3.0",
+    "@fontsource/instrument-serif": "5.3.0",
+    "@unlighthouse/cli": "0.19.1",
+    "cheerio": "1.2.0",
+    "csv-parse": "7.0.3",
+    "diff": "9.0.0",
+    "ipaddr.js": "2.5.0",
+    "playwright": "1.63.0",
+    "remark": "15.0.1",
+    "robots-parser": "3.0.1",
+    "schema-dts": "2.1.0",
+    "sharp": "0.35.5"
+  },
+  "devDependencies": {
+    "typescript": "7.0.2"
+  }
+}

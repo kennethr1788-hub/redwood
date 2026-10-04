@@ -1,0 +1,6 @@
+node_modules/
+.studio/
+.tools/
+.test-output/
+.DS_Store
+__pycache__/
