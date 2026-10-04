@@ -12,6 +12,8 @@ Redwood is designed to use your existing coding and AI tools instead of requirin
 
 The advertised complete verification scope targets **macOS**, with Node.js **24+**, npm, Git, the macOS `sandbox-exec` utility, Playwright Chromium, and native FFmpeg/ffprobe on PATH. The verifier reports missing prerequisites and stops. Other operating systems are not qualified by this release.
 
+Use a checkout path without spaces. Present's current motion renderer cannot resolve its dependency from a path containing spaces; the public verifier reports that failure instead of passing.
+
 Install FFmpeg/ffprobe separately through your trusted package manager. You can instead set `FFMPEG_PATH` and `FFPROBE_PATH` to their installed executable paths. No browser, model, native coding client or media binary is bundled. Dependencies download separately; review them before installation.
 
 ## Install
